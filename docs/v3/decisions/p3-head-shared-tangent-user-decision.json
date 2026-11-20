@@ -1,0 +1,22 @@
+{
+  "schema": "v3-user-design-decision/1.0",
+  "decision_id": "P3-USER-HEAD-SHARED-TANGENT-01",
+  "authority": "explicit user reply in this conversation",
+  "confirmed_at": "Exact user message timestamp not supplied",
+  "question": "头部建议保留源件的共同球心、六块球面/锥面/台阶各自共用载体；六个周向区域的半径和轴方向分别独立，两侧环面及上下圆角采用精确相切关系，接点由公式派生。规范化相对源件的小差异计入误差预算。是否采用？",
+  "answer": "采用上述共用与相切关系（推荐）。",
+  "scope": {
+    "common_sphere_center": true,
+    "shared_carriers": "six spherical, conical and step faces share their respective carriers",
+    "circumferential_regions": 6,
+    "region_radii_and_axis_directions": "independently editable for each region",
+    "exact_tangency": "two toroidal sides and upper/lower fillets",
+    "contact_points": "derived by formulas",
+    "normalization_difference": "include in error budget"
+  },
+  "not_confirmed": [
+    "unrestricted edit domain or topology preservation",
+    "native constraints or edit propagation",
+    "source trim, complete material closure or target accuracy achieved"
+  ]
+}

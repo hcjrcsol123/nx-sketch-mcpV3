@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "reference": {
+    "snapshot_id": "manual_block_smoke",
+    "path": "manual://block-smoke",
+    "version": "manual",
+    "selected_body": "smoke_body",
+    "length_unit": "mm",
+    "rigid_transform": {"origin": [0, 0, 0], "x_axis": [1, 0, 0], "y_axis": [0, 1, 0]}
+  },
+  "parameters": [
+    {"id": "x", "dimension": "length", "value": 10, "expression": null},
+    {"id": "y", "dimension": "length", "value": 5, "expression": null},
+    {"id": "width", "dimension": "length", "value": 30, "expression": null},
+    {"id": "height", "dimension": "length", "value": null, "expression": "width * 2 / 3"},
+    {"id": "depth", "dimension": "length", "value": 15, "expression": null}
+  ],
+  "regions": [{"id": "block_region", "source_geometry": [], "confirmed": true}],
+  "operations": [
+    {"id": "base", "kind": "datum_plane", "depends_on": [], "region_id": "block_region", "parameters": {}, "data": {"origin": [0, 0, 0], "x_axis": [1, 0, 0], "y_axis": [0, 1, 0]}, "source_geometry": [], "confirmed": true},
+    {"id": "profile", "kind": "sketch_rectangle", "depends_on": ["base"], "region_id": "block_region", "parameters": {"x": "x", "y": "y", "width": "width", "height": "height"}, "data": {"datum_id": "base"}, "source_geometry": [], "confirmed": true},
+    {"id": "block", "kind": "extrude", "depends_on": ["profile"], "region_id": "block_region", "parameters": {"distance": "depth"}, "data": {"sketch_id": "profile", "boolean": "create"}, "source_geometry": [], "confirmed": true}
+  ],
+  "constraints": [],
+  "capability_requirements": ["rectangle_driving_dimensions", "extrude_create"],
+  "open_items": []
+}

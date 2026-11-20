@@ -1,0 +1,26 @@
+{
+  "schema": "v3-user-design-decision/1.0",
+  "decision_id": "P3-USER-SHOULDER-FLANK-LINK-01",
+  "confirmed_at": "Exact user message timestamp not supplied",
+  "authority": "explicit user reply in this conversation",
+  "question": "另一个新参数关系需确认：是否让两侧肩部也随已确认的直翼母形联动？建议每个肩部沿自身横向回转轴生成，并按各自与毛坯的交界裁剪；不强制所有肩部裁剪相同，也不添加相切约束。",
+  "answer": "肩部随对应直翼母形联动（推荐）",
+  "scope": {
+    "link": "each shoulder follows its corresponding straight-flank template",
+    "generation": "each shoulder revolves about its own transverse axis",
+    "trim": "each shoulder is trimmed at its own intersection with stock",
+    "shared_trim_across_shoulders": false,
+    "additional_tangency_constraint": false
+  },
+  "source_binding": {
+    "shared_templates_decision": "docs/v3/decisions/p3-shared-flank-templates-user-decision.json",
+    "shoulder_comparison": "workspace/v3/p3/P3-SHOULDERS-ANALYSIS-03/visible-profile-comparison.json",
+    "parameter_expression": "workspace/v3/p3/P3-PARAMETERS-01/flank-parameter-expression-c5.json"
+  },
+  "not_confirmed": [
+    "identical shoulder trim or full geometry",
+    "G1 or other added tangency",
+    "native binding, edit propagation, or allowed edit range",
+    "source trim, stock occupancy, or 0.001 mm target achieved"
+  ]
+}

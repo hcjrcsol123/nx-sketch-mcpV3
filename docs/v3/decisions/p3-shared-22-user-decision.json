@@ -1,0 +1,58 @@
+{
+  "schema": "v3-user-design-decision/1.0",
+  "decision_id": "P3-USER-22-SHARED-01",
+  "recorded_utc": "2026-11-09T10:22:45.868223+00:00",
+  "confirmed_at": "Exact message timestamp not recorded",
+  "authority": "explicit user reply in this conversation",
+  "question": "现有数据确认：22 个等半径圆柱面的轴线等角分布。重建时，是否将这组结构的半径、节圆半径和相位设为共享驱动参数，并保持等角联动（数量暂固定为 22）？这项选择决定设计关系，不会替代几何验证。",
+  "answer": "确认共享尺寸和等角联动",
+  "scope": {
+    "shared_cylinder_radius": true,
+    "shared_pitch_circle_radius": true,
+    "shared_phase": true,
+    "equal_angular_spacing": true,
+    "fixed_count": 22
+  },
+  "observation_binding": {
+    "analysis_path": "workspace/v3/p3/P3-ANALYSIS-03/model-plan.json",
+    "snapshot_id": "P3-DETAIL-3444b40a6faa4210ad64c45f344b27be",
+    "candidate_ids": [
+      "REL_equal_radius_F0011_F0029_F0036_F0047_F0064_F0069_F0081_F0098_F0100_F0122_F0127_F0129_F0136_F0143_F0147_F0165_F0172_F0174_F0179_F0183_F0189_F0194",
+      "REL_circular_axes_F0011_F0029_F0036_F0047_F0064_F0069_F0081_F0098_F0100_F0122_F0127_F0129_F0136_F0143_F0147_F0165_F0172_F0174_F0179_F0183_F0189_F0194"
+    ],
+    "source_face_ids": [
+      "F0011",
+      "F0029",
+      "F0036",
+      "F0047",
+      "F0064",
+      "F0069",
+      "F0081",
+      "F0098",
+      "F0100",
+      "F0122",
+      "F0127",
+      "F0129",
+      "F0136",
+      "F0143",
+      "F0147",
+      "F0165",
+      "F0172",
+      "F0174",
+      "F0179",
+      "F0183",
+      "F0189",
+      "F0194"
+    ],
+    "id_scope": "Only this accepted analysis snapshot; no implicit cross-session or cross-snapshot transfer"
+  },
+  "not_confirmed": [
+    "full region geometry or trimming",
+    "native feature bindings or editing propagation",
+    "valid edit ranges",
+    "other parameter relationships",
+    "construction order or source design history",
+    "whole-part execution approval"
+  ],
+  "scope_note": "Original user decision; implementation must preserve the observation frame and member mapping from the linked analysis, not substitute another angle convention."
+}

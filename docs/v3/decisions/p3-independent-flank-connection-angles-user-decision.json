@@ -1,0 +1,56 @@
+{
+  "schema": "v3-user-design-decision/1.0",
+  "decision_id": "P3-USER-INDEPENDENT-FLANK-CONNECTION-ANGLES-01",
+  "recorded_utc": "2026-11-12T14:35:55.862863+00:00",
+  "confirmed_at": "Exact user message timestamp not supplied",
+  "authority": "explicit user reply in this conversation",
+  "question": "母形的可编辑方案已算通：每侧3个有效控制点的坐标独立可调，另外2个控制点由端点约束求出。建议外端圆半径联动轴段外径，并将两侧共4个圆上连接位置角设为独立可编辑。你希望这4个角可调，还是固定在当前值？这是此前“共享母形、端点约束”之外的一项编辑自由度选择。",
+  "answer": "- 4个连接角独立可编辑（推荐）",
+  "selected_option": "4个连接角独立可编辑",
+  "scope": {
+    "independent_connection_angles": [
+      {
+        "template_label": "F0002",
+        "endpoint_role": "root",
+        "unit": "rad"
+      },
+      {
+        "template_label": "F0002",
+        "endpoint_role": "outer",
+        "unit": "rad"
+      },
+      {
+        "template_label": "F0024",
+        "endpoint_role": "root",
+        "unit": "rad"
+      },
+      {
+        "template_label": "F0024",
+        "endpoint_role": "outer",
+        "unit": "rad"
+      }
+    ],
+    "same_side_shared_across_22_members": true,
+    "templates_remain_independent": true,
+    "preserve_original_template_order_and_knots": true
+  },
+  "source_binding": {
+    "parameter_proposal": "workspace/v3/p3/P3-FLANK-DRIVERS-01/机械参数方案.md",
+    "source_calculation": "workspace/v3/p3/P3-FLANK-DRIVERS-01/calculation.json",
+    "accepted_existing_binding": "workspace/v3/p3/P3-DECISIONS-02/decision-bindings-c2.json",
+    "prior_template_decision": "docs/v3/decisions/p3-shared-flank-templates-user-decision.json",
+    "source_numeric_case_note": "The mechanical source-reference Rp/phase are not substituted for confirmed C2 driver defaults."
+  },
+  "implementation_context": {
+    "outer_endpoint_radius": "geometric attachment to shaft outer radius, i.e. outer diameter/2; no separate independently editable outer-radius parameter is authorized by this angle choice",
+    "initial_angle_values": "derive from source endpoints with the confirmed runtime/default frame; user did not specify new numeric angle values",
+    "native_driving": "not yet implemented or validated"
+  },
+  "not_confirmed": [
+    "G1/tangent constraints",
+    "unrestricted angle domains or topology changes",
+    "exact native closure or solver behavior",
+    "full shoulder/whole-part trim equivalence",
+    "0.001 mm geometry target achieved"
+  ]
+}

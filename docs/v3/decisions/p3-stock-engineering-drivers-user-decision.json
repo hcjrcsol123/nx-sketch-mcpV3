@@ -1,0 +1,26 @@
+{
+  "schema": "v3-user-design-decision/1.0",
+  "decision_id": "P3-USER-STOCK-ENGINEERING-DRIVERS-01",
+  "authority": "explicit user reply in this conversation",
+  "confirmed_at": "Exact user message timestamp not supplied",
+  "question": "其余轴身尺寸建议按“工程尺寸驱动”：直径、圆角半径、锥角和选定轴向长度独立可编辑，接点坐标由它们求出；保留已有相切接头，原本不相切的接头不加相切。是否采用？这会避免同时把锥角和它两端交点都设为独立尺寸造成冲突。",
+  "answer": "采用工程尺寸驱动方案（推荐）。",
+  "scope": {
+    "independent_editable": [
+      "diameters",
+      "fillet radii",
+      "cone angles",
+      "selected axial lengths"
+    ],
+    "derived": [
+      "connection point coordinates"
+    ],
+    "retain_existing_tangent_joints": true,
+    "add_tangency_at_other_joints": false
+  },
+  "not_confirmed": [
+    "unrestricted edit domain or topology preservation",
+    "native constraints or edit propagation",
+    "full source trim or target accuracy achieved"
+  ]
+}

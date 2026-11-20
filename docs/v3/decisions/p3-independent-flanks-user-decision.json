@@ -1,0 +1,88 @@
+{
+  "schema": "v3-user-design-decision/1.0",
+  "decision_id": "P3-USER-INDEPENDENT-FLANK-SPLINES-01",
+  "recorded_utc": "2026-11-09T11:48:09.018717+00:00",
+  "confirmed_date": "2026-11-09",
+  "confirmed_at": "Exact message timestamp not recorded",
+  "authority": "explicit user reply in this conversation",
+  "question": "对于实读的两条独立齿侧样条，是否接受保留原始差异，以控制点尺寸和端点约束驱动形状、固定阶数和节点，作为重建齿形的表达？这不会自动确认完整裁剪或全部 22 个齿形完全相同。",
+  "answer": "接受两条独立可编辑样条",
+  "scope": {
+    "independent_editable_flanks": true,
+    "preserve_original_differences": true,
+    "control_point_dimensions_and_endpoint_constraints": true,
+    "fix_each_original_order_and_knot_vector": true
+  },
+  "observation_sources": [
+    {
+      "label": "F0002",
+      "snapshot_id": "P3-DETAIL-3444b40a6faa4210ad64c45f344b27be",
+      "detail_path": "workspace/v3/p3/P3-CIRCLE-01/native-01/detail-snapshot.json",
+      "summary_path": "workspace/v3/p3/P3-CIRCLE-01/native-01/detail-summary.json",
+      "selection_evidence": "surface and UF type, bounding box and edge count only; not shape equivalence",
+      "source_locator_scope": "label is a selection-evidence label; native tags remain local to source snapshot",
+      "observed_basis": {
+        "order": 4,
+        "knots": [
+          0,
+          0,
+          0,
+          0,
+          0.07785760913846,
+          0.5224881258948,
+          0.9225792444503,
+          1,
+          1,
+          1,
+          1
+        ],
+        "full_domain": [
+          0,
+          1
+        ],
+        "num_poles": 7,
+        "rational": false
+      }
+    },
+    {
+      "label": "F0024",
+      "snapshot_id": "P3-DETAIL-9c1ee4cf468e48b18b3ebe75d65df6b5",
+      "detail_path": "workspace/v3/p3/P3-REGIONS-01/native-01-F0024/detail-snapshot.json",
+      "summary_path": "workspace/v3/p3/P3-REGIONS-01/native-01-F0024/detail-summary.json",
+      "selection_evidence": "surface and UF type, bounding box and edge count only; not shape equivalence",
+      "source_locator_scope": "label is a selection-evidence label; native tags remain local to source snapshot",
+      "observed_basis": {
+        "order": 4,
+        "knots": [
+          0,
+          0,
+          0,
+          0,
+          0.07751584936153,
+          0.4776325704711,
+          0.9222915399382,
+          1,
+          1,
+          1,
+          1
+        ],
+        "full_domain": [
+          0,
+          1
+        ],
+        "num_poles": 7,
+        "rational": false
+      }
+    }
+  ],
+  "not_confirmed": [
+    "actual trim domain or UV to generator mapping",
+    "that original first and last poles are trimmed endpoints",
+    "that every original pole drives visible trimmed geometry",
+    "exact endpoint attachment or tangency conditions",
+    "editing ranges and constraint solvability",
+    "native binding and full-shape validation",
+    "complete geometry equality or shared shape of all 22 teeth"
+  ],
+  "note": "This is the original user expression choice, not a certificate of geometric reconstruction. Derived clamped representations, if used later, must preserve source identity and dependency rather than silently replace the fixed original basis."
+}

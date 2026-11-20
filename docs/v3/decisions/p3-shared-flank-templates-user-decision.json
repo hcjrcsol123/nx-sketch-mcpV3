@@ -1,0 +1,382 @@
+{
+  "schema": "v3-user-design-decision/1.0",
+  "recorded_utc": "2026-11-11T12:19:45.903410+00:00",
+  "confirmed_at": "Exact message timestamp not available; recorded after receipt in this conversation",
+  "authority": "explicit user reply in this conversation",
+  "answer": "均为前者",
+  "answer_context": "User selected the first option for both numbered questions in the immediately preceding assistant final answer.",
+  "decision_id": "P3-USER-SHARED-FLANK-TEMPLATES-01",
+  "question": "22组同侧共享两条独立母形，还是保留44条独立样条？",
+  "selected_option": "22组同侧共享两条独立母形",
+  "scope": {
+    "two_independent_original_generators": true,
+    "same_side_shared_across_members": true,
+    "fixed_count": 22,
+    "preserve_each_template_original_order_and_knots": true,
+    "position_by_confirmed_equal_angular_relation": true,
+    "per_member_trim_and_connection_evidence_retained": true
+  },
+  "source_binding": {
+    "source_map_path": "workspace/v3/p3/P3-SWEPT-ANALYSIS-01/source-map.json",
+    "p1_snapshot_id": "P1-REFERENCE-7812d302a165453badcd339473b5dba3",
+    "members": [
+      {
+        "member_index": 0,
+        "observed_angle_rad": 0.28559212666864164,
+        "decision_snapshot_face_id": "F0172",
+        "p1_cylinder_face_id": "F0172",
+        "p1_swept_face_ids": [
+          "F0072",
+          "F0184"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 1,
+        "observed_angle_rad": 0.5711914588132811,
+        "decision_snapshot_face_id": "F0194",
+        "p1_cylinder_face_id": "F0194",
+        "p1_swept_face_ids": [
+          "F0208",
+          "F0216"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 2,
+        "observed_angle_rad": 0.8567907909577581,
+        "decision_snapshot_face_id": "F0011",
+        "p1_cylinder_face_id": "F0011",
+        "p1_swept_face_ids": [
+          "F0093",
+          "F0107"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 3,
+        "observed_angle_rad": 1.1423901231024831,
+        "decision_snapshot_face_id": "F0047",
+        "p1_cylinder_face_id": "F0047",
+        "p1_swept_face_ids": [
+          "F0111",
+          "F0222"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 4,
+        "observed_angle_rad": 1.4279894552468348,
+        "decision_snapshot_face_id": "F0100",
+        "p1_cylinder_face_id": "F0100",
+        "p1_swept_face_ids": [
+          "F0114",
+          "F0170"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 5,
+        "observed_angle_rad": 1.7135887873912947,
+        "decision_snapshot_face_id": "F0147",
+        "p1_cylinder_face_id": "F0147",
+        "p1_swept_face_ids": [
+          "F0052",
+          "F0058"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 6,
+        "observed_angle_rad": 1.9991881195357983,
+        "decision_snapshot_face_id": "F0069",
+        "p1_cylinder_face_id": "F0069",
+        "p1_swept_face_ids": [
+          "F0221",
+          "F0228"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 7,
+        "observed_angle_rad": 2.284787451680397,
+        "decision_snapshot_face_id": "F0127",
+        "p1_cylinder_face_id": "F0127",
+        "p1_swept_face_ids": [
+          "F0017",
+          "F0085"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 8,
+        "observed_angle_rad": 2.5703867838249184,
+        "decision_snapshot_face_id": "F0179",
+        "p1_cylinder_face_id": "F0179",
+        "p1_swept_face_ids": [
+          "F0008",
+          "F0159"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 9,
+        "observed_angle_rad": 2.855986115969534,
+        "decision_snapshot_face_id": "F0081",
+        "p1_cylinder_face_id": "F0081",
+        "p1_swept_face_ids": [
+          "F0207",
+          "F0227"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 10,
+        "observed_angle_rad": 3.1415854481139807,
+        "decision_snapshot_face_id": "F0064",
+        "p1_cylinder_face_id": "F0064",
+        "p1_swept_face_ids": [
+          "F0002",
+          "F0024"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 11,
+        "observed_angle_rad": 3.4271847802584348,
+        "decision_snapshot_face_id": "F0036",
+        "p1_cylinder_face_id": "F0036",
+        "p1_swept_face_ids": [
+          "F0134",
+          "F0180"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 12,
+        "observed_angle_rad": 3.712784112403074,
+        "decision_snapshot_face_id": "F0174",
+        "p1_cylinder_face_id": "F0174",
+        "p1_swept_face_ids": [
+          "F0094",
+          "F0186"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 13,
+        "observed_angle_rad": 3.9983834445475512,
+        "decision_snapshot_face_id": "F0122",
+        "p1_cylinder_face_id": "F0122",
+        "p1_swept_face_ids": [
+          "F0086",
+          "F0197"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 14,
+        "observed_angle_rad": 4.283982776692277,
+        "decision_snapshot_face_id": "F0136",
+        "p1_cylinder_face_id": "F0136",
+        "p1_swept_face_ids": [
+          "F0084",
+          "F0217"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 15,
+        "observed_angle_rad": 4.569582108836627,
+        "decision_snapshot_face_id": "F0098",
+        "p1_cylinder_face_id": "F0098",
+        "p1_swept_face_ids": [
+          "F0010",
+          "F0149"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 16,
+        "observed_angle_rad": 4.855181440981088,
+        "decision_snapshot_face_id": "F0029",
+        "p1_cylinder_face_id": "F0029",
+        "p1_swept_face_ids": [
+          "F0077",
+          "F0214"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 17,
+        "observed_angle_rad": 5.1407807731255915,
+        "decision_snapshot_face_id": "F0183",
+        "p1_cylinder_face_id": "F0183",
+        "p1_swept_face_ids": [
+          "F0057",
+          "F0103"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 18,
+        "observed_angle_rad": 5.42638010527019,
+        "decision_snapshot_face_id": "F0165",
+        "p1_cylinder_face_id": "F0165",
+        "p1_swept_face_ids": [
+          "F0091",
+          "F0234"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 19,
+        "observed_angle_rad": 5.711979437414712,
+        "decision_snapshot_face_id": "F0143",
+        "p1_cylinder_face_id": "F0143",
+        "p1_swept_face_ids": [
+          "F0088",
+          "F0146"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 20,
+        "observed_angle_rad": 5.997578769559327,
+        "decision_snapshot_face_id": "F0189",
+        "p1_cylinder_face_id": "F0189",
+        "p1_swept_face_ids": [
+          "F0039",
+          "F0144"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      },
+      {
+        "member_index": 21,
+        "observed_angle_rad": 6.283178101703774,
+        "decision_snapshot_face_id": "F0129",
+        "p1_cylinder_face_id": "F0129",
+        "p1_swept_face_ids": [
+          "F0034",
+          "F0224"
+        ],
+        "status": "observation_mapping_only",
+        "flank_order": "unassigned",
+        "shared_shape": "not_assumed"
+      }
+    ],
+    "relation_decision_path": "docs/v3/decisions/p3-shared-22-user-decision.json",
+    "original_flank_decision_path": "docs/v3/decisions/p3-independent-flanks-user-decision.json",
+    "template_observation_sources": [
+      {
+        "label": "F0002",
+        "snapshot_id": "P3-DETAIL-3444b40a6faa4210ad64c45f344b27be",
+        "detail_path": "workspace/v3/p3/P3-CIRCLE-01/native-01/detail-snapshot.json",
+        "summary_path": "workspace/v3/p3/P3-CIRCLE-01/native-01/detail-summary.json",
+        "selection_evidence": "surface and UF type, bounding box and edge count only; not shape equivalence",
+        "source_locator_scope": "label is a selection-evidence label; native tags remain local to source snapshot",
+        "observed_basis": {
+          "order": 4,
+          "knots": [
+            0,
+            0,
+            0,
+            0,
+            0.07785760913846,
+            0.5224881258948,
+            0.9225792444503,
+            1,
+            1,
+            1,
+            1
+          ],
+          "full_domain": [
+            0,
+            1
+          ],
+          "num_poles": 7,
+          "rational": false
+        }
+      },
+      {
+        "label": "F0024",
+        "snapshot_id": "P3-DETAIL-9c1ee4cf468e48b18b3ebe75d65df6b5",
+        "detail_path": "workspace/v3/p3/P3-REGIONS-01/native-01-F0024/detail-snapshot.json",
+        "summary_path": "workspace/v3/p3/P3-REGIONS-01/native-01-F0024/detail-summary.json",
+        "selection_evidence": "surface and UF type, bounding box and edge count only; not shape equivalence",
+        "source_locator_scope": "label is a selection-evidence label; native tags remain local to source snapshot",
+        "observed_basis": {
+          "order": 4,
+          "knots": [
+            0,
+            0,
+            0,
+            0,
+            0.07751584936153,
+            0.4776325704711,
+            0.9222915399382,
+            1,
+            1,
+            1,
+            1
+          ],
+          "full_domain": [
+            0,
+            1
+          ],
+          "num_poles": 7,
+          "rational": false
+        }
+      }
+    ]
+  },
+  "not_confirmed": [
+    "identical complete trimmed teeth or all shoulder/end features",
+    "all original poles are active visible geometry drivers",
+    "exact source-to-reconstruction equality or 0.001 mm achieved",
+    "editing domains, native constraints and backend execution",
+    "replacement of the original seven-pole bases by five-pole observed edges"
+  ]
+}

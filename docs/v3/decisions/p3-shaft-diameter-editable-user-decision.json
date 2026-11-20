@@ -1,0 +1,27 @@
+{
+  "schema": "v3-user-design-decision/1.0",
+  "decision_id": "P3-USER-SHAFT-DIAMETER-EDITABLE-01",
+  "confirmed_at": "Exact user message timestamp not supplied",
+  "authority": "explicit user reply in this conversation",
+  "answer": "轴外径独立可编辑，外端半径随动（推荐）",
+  "scope": {
+    "shaft_outer_diameter": "independent editable dimension",
+    "outer_endpoint_radius": "derived as shaft outer diameter / 2",
+    "consumers": [
+      "stock shaft outer radius",
+      "F0002.outer.circle_point",
+      "F0024.outer.circle_point"
+    ]
+  },
+  "source_binding": {
+    "prior_flank_angles_decision": "docs/v3/decisions/p3-independent-flank-connection-angles-user-decision.json",
+    "parameter_expression": "workspace/v3/p3/P3-PARAMETERS-01/flank-parameter-expression-c5.json"
+  },
+  "not_confirmed": [
+    "shoulder coupling or shared shoulder design intent",
+    "unrestricted editing domain or topology preservation",
+    "native binding or edit propagation",
+    "full trim, material occupancy, or 0.001 mm target achieved"
+  ],
+  "question": "P3还有一项尺寸归属未定：轴段外径Dshaft（直翼外端半径随它取Dshaft/2）如何处理？已有四个连接角及两侧母形决定保持有效。"
+}

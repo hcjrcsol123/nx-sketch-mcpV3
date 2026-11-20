@@ -1,0 +1,5822 @@
+{
+  "schema": "v3-sample-regional-workbreakdown/1.0",
+  "status": "planning",
+  "objective": "Organize the actual reference inventory into traceable, bounded candidate regions and a limited native-read plan for P3; this is not a product recognizer or an executable model plan.",
+  "snapshot_id": "P1-REFERENCE-7812d302a165453badcd339473b5dba3",
+  "source_inventory": "workspace/v3/p1/P1-20261108-01/native/p1-reference-snapshot.json",
+  "identifier_scope": "F and E identifiers are one-based positions in the P1 selected_body faces and edges arrays only; source tags and journal identifiers are session scoped. A label seen in another snapshot is not identity evidence: rematch using the accepted semantic selector and retain its snapshot context.",
+  "unit": "mm",
+  "coordinate_system": "absolute_part_coordinates",
+  "classification": {
+    "type": "sample_specific_offline_workbreakdown",
+    "precedence": "A, B, C, D, E, then F; rules are exclusive by first match. ymin/ymax are indices 1 and 4 in the native bounding_box [xmin,ymin,zmin,xmax,ymax,zmax].",
+    "threshold_scope": "Numerical limits and classification windows are sample-specific analysis values, not engineering tolerances, model precision, or product recognition rules. Do not hardcode them into product algorithms.",
+    "counts": {
+      "faces": 235,
+      "edges": 622,
+      "candidate_group_counts": {
+        "A_head": 62,
+        "B_rear": 11,
+        "C_shoulder": 68,
+        "D_shaft_carrier": 22,
+        "E_neck": 4,
+        "F_remainder": 68
+      }
+    },
+    "classification_does_not_prove": [
+      "feature identity",
+      "complete trimmed region or loops",
+      "solid material side",
+      "engineering intent",
+      "editable relationships",
+      "construction history",
+      "explained face coverage"
+    ]
+  },
+  "groups": [
+    {
+      "group_id": "A_head",
+      "status": "provisional",
+      "rule": "First: ymin >= -49.00001",
+      "face_count": 62,
+      "source_face_ids": [
+        "F0003",
+        "F0006",
+        "F0012",
+        "F0020",
+        "F0021",
+        "F0023",
+        "F0035",
+        "F0041",
+        "F0044",
+        "F0046",
+        "F0048",
+        "F0050",
+        "F0051",
+        "F0056",
+        "F0062",
+        "F0065",
+        "F0066",
+        "F0071",
+        "F0073",
+        "F0082",
+        "F0083",
+        "F0095",
+        "F0096",
+        "F0099",
+        "F0102",
+        "F0105",
+        "F0108",
+        "F0112",
+        "F0113",
+        "F0118",
+        "F0121",
+        "F0124",
+        "F0128",
+        "F0130",
+        "F0131",
+        "F0137",
+        "F0138",
+        "F0150",
+        "F0153",
+        "F0155",
+        "F0156",
+        "F0157",
+        "F0160",
+        "F0166",
+        "F0171",
+        "F0175",
+        "F0176",
+        "F0177",
+        "F0181",
+        "F0190",
+        "F0193",
+        "F0196",
+        "F0203",
+        "F0205",
+        "F0206",
+        "F0213",
+        "F0215",
+        "F0218",
+        "F0220",
+        "F0226",
+        "F0232",
+        "F0235"
+      ],
+      "provisional_role": "Head envelope, coaxial analytic carriers and surrounding complex/spherical patches; segmentation only.",
+      "unresolved_boundary": "Includes multiple distinct carriers and interior/exterior roles; F0220 to neck, F0137 sphere/transition loop, head complex patches and top/bottom boundaries remain unclosed."
+    },
+    {
+      "group_id": "B_rear",
+      "status": "provisional",
+      "rule": "Else ymax <= -123.26999",
+      "face_count": 11,
+      "source_face_ids": [
+        "F0001",
+        "F0005",
+        "F0009",
+        "F0031",
+        "F0059",
+        "F0076",
+        "F0115",
+        "F0116",
+        "F0119",
+        "F0140",
+        "F0148"
+      ],
+      "provisional_role": "Rear coaxial body and termination with transverse features.",
+      "unresolved_boundary": "F0005/F0140 torus to F0026/F0067; F0009/F0076 to F0031 and F0059/F0116/F0119; finish material side and end closure unknown."
+    },
+    {
+      "group_id": "C_shoulder",
+      "status": "provisional",
+      "rule": "Else ymin >= -71.00001 and ymax <= -66.99999",
+      "face_count": 68,
+      "source_face_ids": [
+        "F0004",
+        "F0007",
+        "F0013",
+        "F0014",
+        "F0015",
+        "F0016",
+        "F0019",
+        "F0022",
+        "F0025",
+        "F0027",
+        "F0028",
+        "F0033",
+        "F0037",
+        "F0038",
+        "F0042",
+        "F0045",
+        "F0049",
+        "F0053",
+        "F0055",
+        "F0060",
+        "F0061",
+        "F0063",
+        "F0070",
+        "F0074",
+        "F0075",
+        "F0079",
+        "F0090",
+        "F0092",
+        "F0101",
+        "F0104",
+        "F0109",
+        "F0117",
+        "F0120",
+        "F0123",
+        "F0125",
+        "F0126",
+        "F0132",
+        "F0133",
+        "F0135",
+        "F0139",
+        "F0141",
+        "F0145",
+        "F0151",
+        "F0154",
+        "F0158",
+        "F0162",
+        "F0164",
+        "F0169",
+        "F0182",
+        "F0185",
+        "F0187",
+        "F0188",
+        "F0191",
+        "F0192",
+        "F0195",
+        "F0198",
+        "F0199",
+        "F0200",
+        "F0204",
+        "F0209",
+        "F0210",
+        "F0211",
+        "F0212",
+        "F0219",
+        "F0229",
+        "F0230",
+        "F0231",
+        "F0233"
+      ],
+      "provisional_role": "Transition region between neck and long repeating surface.",
+      "unresolved_boundary": "F0126/F0169 have high adjacency; neighboring small surface observations do not establish their complete trimmed boundaries or transition design."
+    },
+    {
+      "group_id": "D_shaft_carrier",
+      "status": "provisional",
+      "rule": "Else Cylindrical and abs(radius - 12.1665) < 0.005 and ymin <= -122.5 and ymax >= -70",
+      "face_count": 22,
+      "source_face_ids": [
+        "F0018",
+        "F0030",
+        "F0032",
+        "F0040",
+        "F0043",
+        "F0054",
+        "F0068",
+        "F0080",
+        "F0087",
+        "F0089",
+        "F0097",
+        "F0106",
+        "F0110",
+        "F0142",
+        "F0152",
+        "F0161",
+        "F0163",
+        "F0173",
+        "F0178",
+        "F0201",
+        "F0223",
+        "F0225"
+      ],
+      "provisional_role": "22 fragments of one apparent coaxial radius-12.1665 mm underlying cylindrical carrier.",
+      "unresolved_boundary": "Rotationally related carrier fragments do not prove identical trimming; boundaries with swept sides, end cone and shoulder remain unresolved."
+    },
+    {
+      "group_id": "E_neck",
+      "status": "provisional",
+      "rule": "Else ymin >= -67.00001 and ymax <= -48.99999",
+      "face_count": 4,
+      "source_face_ids": [
+        "F0078",
+        "F0167",
+        "F0168",
+        "F0202"
+      ],
+      "provisional_role": "Coaxial neck candidate including F0078/F0202 and F0167/F0168.",
+      "unresolved_boundary": "Boundary to F0220 and F0126/F0169 must be traced; solid role and section closure remain provisional."
+    },
+    {
+      "group_id": "F_remainder",
+      "status": "provisional",
+      "rule": "Else all other faces, after A through E",
+      "face_count": 68,
+      "source_face_ids": [
+        "F0002",
+        "F0008",
+        "F0010",
+        "F0011",
+        "F0017",
+        "F0024",
+        "F0026",
+        "F0029",
+        "F0034",
+        "F0036",
+        "F0039",
+        "F0047",
+        "F0052",
+        "F0057",
+        "F0058",
+        "F0064",
+        "F0067",
+        "F0069",
+        "F0072",
+        "F0077",
+        "F0081",
+        "F0084",
+        "F0085",
+        "F0086",
+        "F0088",
+        "F0091",
+        "F0093",
+        "F0094",
+        "F0098",
+        "F0100",
+        "F0103",
+        "F0107",
+        "F0111",
+        "F0114",
+        "F0122",
+        "F0127",
+        "F0129",
+        "F0134",
+        "F0136",
+        "F0143",
+        "F0144",
+        "F0146",
+        "F0147",
+        "F0149",
+        "F0159",
+        "F0165",
+        "F0170",
+        "F0172",
+        "F0174",
+        "F0179",
+        "F0180",
+        "F0183",
+        "F0184",
+        "F0186",
+        "F0189",
+        "F0194",
+        "F0197",
+        "F0207",
+        "F0208",
+        "F0214",
+        "F0216",
+        "F0217",
+        "F0221",
+        "F0222",
+        "F0224",
+        "F0227",
+        "F0228",
+        "F0234"
+      ],
+      "provisional_role": "22 confirmed-relation cylinders, 44 swept faces and two rear conical faces F0026/F0067, grouped by location and adjacency only.",
+      "unresolved_boundary": "Do not infer 22 equivalent complete features: cross sections, end trimming, flank parameterization and inside/outside roles are not established."
+    }
+  ],
+  "cross_group_edges": {
+    "basis": "P1 selected_body.edges array and reciprocal face incidence; source_edge_id is this snapshot array index, not an NX runtime tag. Edge type and two-sided incidence do not establish curve geometry, trim, orientation, or material side.",
+    "count": 204,
+    "edges": [
+      {
+        "source_edge_id": "E0004",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0161"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0006",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0110",
+          "F0192"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0008",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0030",
+          "F0210"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0010",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0075",
+          "F0189"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0020",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0022",
+          "F0111"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0024",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0070",
+          "F0089"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0028",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0030",
+          "F0126"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0034",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0055",
+          "F0225"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0035",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0070",
+          "F0217"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0037",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0060",
+          "F0122"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0038",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0068",
+          "F0159"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0039",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0040",
+          "F0169"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0042",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0067",
+          "F0110"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0044",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0067",
+          "F0152"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0061",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0067",
+          "F0140"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "B_rear"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0065",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0178",
+          "F0208"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0067",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0067",
+          "F0178"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0068",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0107",
+          "F0178"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0070",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0038",
+          "F0178"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0073",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0221",
+          "F0223"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0076",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0079",
+          "F0146"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0078",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0165",
+          "F0212"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0088",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0025",
+          "F0234"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0104",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0106"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0110",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0087"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0113",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0043",
+          "F0126"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0116",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0201"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0120",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0134",
+          "F0163"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0123",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0100",
+          "F0209"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0124",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0043"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0129",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0089"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0135",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0052",
+          "F0110"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0136",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0097"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0139",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0022",
+          "F0040"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0148",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0030"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0154",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0004",
+          "F0080"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0159",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0038",
+          "F0107"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0163",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0043",
+          "F0162"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0166",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0097",
+          "F0126"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0170",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0152",
+          "F0207"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0172",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0004",
+          "F0222"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0182",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0126",
+          "F0202"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "E_neck"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0187",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0033",
+          "F0173"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0194",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0084",
+          "F0097"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0198",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0018",
+          "F0026"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0200",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0040",
+          "F0170"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0203",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0197",
+          "F0210"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0207",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0054",
+          "F0145"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0211",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0054",
+          "F0067"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0216",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0013",
+          "F0054"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0218",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0142"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0220",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0144",
+          "F0151"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0221",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0005",
+          "F0026"
+        ],
+        "group_ids": [
+          "B_rear",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0223",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0080",
+          "F0169"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0225",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0034",
+          "F0173"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0228",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0151",
+          "F0161"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0230",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0072",
+          "F0173"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0231",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0063",
+          "F0223"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0235",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0089",
+          "F0200"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0236",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0030",
+          "F0197"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0238",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0042",
+          "F0201"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0239",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0002",
+          "F0163"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0251",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0068",
+          "F0204"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0253",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0064",
+          "F0123"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0254",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0032",
+          "F0067"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0261",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0120",
+          "F0183"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0268",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0040",
+          "F0111"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0269",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0016",
+          "F0057"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0270",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0029",
+          "F0195"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0274",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0154",
+          "F0214"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0275",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0194",
+          "F0219"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0279",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0028",
+          "F0077"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0281",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0049",
+          "F0098"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0284",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0142",
+          "F0186"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0287",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0149",
+          "F0162"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0288",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0110",
+          "F0141"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0291",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0169",
+          "F0173"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0293",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0225",
+          "F0227"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0297",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0026",
+          "F0163"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0302",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0067",
+          "F0223"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0303",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0143",
+          "F0233"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0304",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0027",
+          "F0088"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0307",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0136",
+          "F0230"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0312",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0134",
+          "F0158"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0319",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0024",
+          "F0055"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0320",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0037",
+          "F0080"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0322",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0114",
+          "F0145"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0324",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0008",
+          "F0152"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0326",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0078",
+          "F0169"
+        ],
+        "group_ids": [
+          "E_neck",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0328",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0030",
+          "F0094"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0335",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0135",
+          "F0152"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0336",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0168",
+          "F0220"
+        ],
+        "group_ids": [
+          "E_neck",
+          "A_head"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0339",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0167",
+          "F0220"
+        ],
+        "group_ids": [
+          "E_neck",
+          "A_head"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0348",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0017",
+          "F0068"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0367",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0146",
+          "F0161"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0374",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0018",
+          "F0185"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0376",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0018",
+          "F0126"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0377",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0018",
+          "F0191"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0378",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0133",
+          "F0184"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0382",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0109",
+          "F0172"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0387",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0043",
+          "F0149"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0389",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0014",
+          "F0097"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0391",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0126",
+          "F0142"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0393",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0139",
+          "F0152"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0397",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0085",
+          "F0223"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0399",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0085",
+          "F0090"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0406",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0002",
+          "F0198"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0408",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0110",
+          "F0169"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0411",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0094",
+          "F0231"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0415",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0054",
+          "F0058"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0417",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0018",
+          "F0224"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0418",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0072",
+          "F0187"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0424",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0024",
+          "F0225"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0427",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0067",
+          "F0068"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0428",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0117",
+          "F0180"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0432",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0014",
+          "F0086"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0437",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0186",
+          "F0211"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0442",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0015",
+          "F0170"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0443",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0163",
+          "F0198"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0446",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0045",
+          "F0091"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0449",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0032",
+          "F0133"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0452",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0173",
+          "F0187"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0453",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0032",
+          "F0184"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0458",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0032",
+          "F0216"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0460",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0032",
+          "F0199"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0463",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0074",
+          "F0178"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0465",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0037",
+          "F0093"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0476",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0067",
+          "F0225"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0485",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0080",
+          "F0222"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0489",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0033",
+          "F0034"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0491",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0043",
+          "F0154"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0494",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0126",
+          "F0201"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0495",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0185",
+          "F0224"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0496",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0028",
+          "F0201"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0497",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0158",
+          "F0163"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0498",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0077",
+          "F0201"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0499",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0039",
+          "F0191"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0501",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0199",
+          "F0216"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0502",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0007",
+          "F0081"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0504",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0142",
+          "F0180"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0505",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0087",
+          "F0126"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0507",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0016",
+          "F0087"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0509",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0036",
+          "F0188"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0511",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0089",
+          "F0126"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0512",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0057",
+          "F0087"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0513",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0139",
+          "F0207"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0514",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0087",
+          "F0234"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0516",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0169",
+          "F0223"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0517",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0025",
+          "F0087"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0519",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0106",
+          "F0126"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0520",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0101",
+          "F0227"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0521",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0045",
+          "F0106"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0523",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0019",
+          "F0179"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0524",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0091",
+          "F0106"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0526",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0088",
+          "F0106"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0528",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0027",
+          "F0106"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0529",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0086",
+          "F0097"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0530",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0126",
+          "F0161"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0531",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0159",
+          "F0182"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0532",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0079",
+          "F0161"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0533",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0097",
+          "F0164"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0535",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0008",
+          "F0135"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0536",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0018",
+          "F0039"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0537",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0092",
+          "F0127"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0539",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0142",
+          "F0211"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0542",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0169",
+          "F0178"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0546",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0043",
+          "F0214"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0547",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0017",
+          "F0204"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0548",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0069",
+          "F0132"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0552",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0192",
+          "F0228"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0553",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0011",
+          "F0061"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0557",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0063",
+          "F0221"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0558",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0089",
+          "F0217"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0559",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0104",
+          "F0147"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0560",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0103",
+          "F0201"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0562",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0010",
+          "F0200"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0565",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0126",
+          "F0163"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0567",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0013",
+          "F0058"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0568",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0068",
+          "F0182"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0570",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0110",
+          "F0228"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0572",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0080",
+          "F0093"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0573",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0052",
+          "F0141"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0574",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0040",
+          "F0067"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0578",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0068",
+          "F0169"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0585",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0129",
+          "F0229"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0590",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0169",
+          "F0225"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0593",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0152",
+          "F0169"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0594",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0030",
+          "F0231"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0596",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0053",
+          "F0174"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0597",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0074",
+          "F0208"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0598",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0015",
+          "F0040"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0600",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0032",
+          "F0169"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0602",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0010",
+          "F0089"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0605",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0042",
+          "F0103"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0606",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0054",
+          "F0169"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0607",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0067",
+          "F0173"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0608",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0144",
+          "F0161"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0610",
+        "edge_type": "Spline",
+        "source_face_ids": [
+          "F0084",
+          "F0164"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0615",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0047",
+          "F0125"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "C_shoulder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0616",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0117",
+          "F0142"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0617",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0101",
+          "F0225"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0618",
+        "edge_type": "Intersection",
+        "source_face_ids": [
+          "F0090",
+          "F0223"
+        ],
+        "group_ids": [
+          "C_shoulder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0621",
+        "edge_type": "Linear",
+        "source_face_ids": [
+          "F0054",
+          "F0114"
+        ],
+        "group_ids": [
+          "D_shaft_carrier",
+          "F_remainder"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      },
+      {
+        "source_edge_id": "E0622",
+        "edge_type": "Circular",
+        "source_face_ids": [
+          "F0067",
+          "F0080"
+        ],
+        "group_ids": [
+          "F_remainder",
+          "D_shaft_carrier"
+        ],
+        "boundary_role": "unresolved",
+        "status": "provisional"
+      }
+    ],
+    "status": "provisional"
+  },
+  "known_details": [
+    {
+      "path": "workspace/v3/p3/P3-CIRCLE-01/native-01/detail-snapshot.json",
+      "snapshot_id": "P3-DETAIL-3444b40a6faa4210ad64c45f344b27be",
+      "detail_labels": [
+        "F0002",
+        "F0005"
+      ],
+      "evidence_scope": "UF20 extrude/spline carrier and UF19 ring torus observations; their trim and engineering intent remain open.",
+      "status": "provisional"
+    },
+    {
+      "path": "workspace/v3/p3/P3-SPHERE-01/native-01/detail-snapshot.json",
+      "snapshot_id": "P3-DETAIL-3d39080929344bfb8bfad2a5a54920ee",
+      "detail_labels": [
+        "F0023"
+      ],
+      "evidence_scope": "UF18 sphere carrier and bounded edges; trim completeness and native frame remain open.",
+      "status": "provisional"
+    },
+    {
+      "path": "workspace/v3/p3/P3-SPHERE-01/native-02-f0004/detail-snapshot.json",
+      "snapshot_id": "P3-DETAIL-e1d85ede2c5341708252bc35b42d8874",
+      "detail_labels": [
+        "F0004"
+      ],
+      "evidence_scope": "UF19 revolve spline carrier and boundary observations; interpretation and trimmed face remain open.",
+      "status": "provisional"
+    },
+    {
+      "path": "workspace/v3/p3/P3-REGIONS-01/native-01-F0024/detail-snapshot.json",
+      "snapshot_id": "P3-DETAIL-9c1ee4cf468e48b18b3ebe75d65df6b5",
+      "detail_labels": [
+        "F0024"
+      ],
+      "evidence_scope": "First native read with clean trace, before/after empty diff and HUMAN_OWNED takeover; underlying carrier and observed loops only. See post_queue_observations for conclusions and limitations.",
+      "status": "provisional"
+    },
+    {
+      "path": "workspace/v3/p3/P3-REGIONS-01/native-02-F0125/detail-snapshot.json",
+      "snapshot_id": "P3-DETAIL-3c4cf7958bc647f9b2e04b4a0c9397d2",
+      "detail_labels": [
+        "F0125"
+      ],
+      "evidence_scope": "First native read with clean trace, before/after empty diff and HUMAN_OWNED takeover; underlying carrier and observed loops only. See post_queue_observations for conclusions and limitations.",
+      "status": "provisional"
+    },
+    {
+      "path": "workspace/v3/p3/P3-REGIONS-01/native-03-F0138/detail-snapshot.json",
+      "snapshot_id": "P3-DETAIL-3a8fc7f02f814f0caf2cf46e7a853919",
+      "detail_labels": [
+        "F0138"
+      ],
+      "evidence_scope": "First native read with clean trace, before/after empty diff and HUMAN_OWNED takeover; underlying carrier and observed loops only. See post_queue_observations for conclusions and limitations.",
+      "status": "provisional"
+    },
+    {
+      "path": "workspace/v3/p3/P3-REGIONS-01/native-04-F0046/detail-snapshot.json",
+      "snapshot_id": "P3-DETAIL-999eccbbdf654439aed08023ca27a619",
+      "detail_labels": [
+        "F0046"
+      ],
+      "evidence_scope": "First native read with clean trace, before/after empty diff and HUMAN_OWNED takeover; underlying carrier and observed loops only. See post_queue_observations for conclusions and limitations.",
+      "status": "provisional"
+    }
+  ],
+  "confirmed_relation": {
+    "decision_path": "docs/v3/decisions/p3-shared-22-user-decision.json",
+    "scope": "Only the decision-bound 22 cylinder observations share cylinder radius, pitch-circle radius, phase and equal angular spacing; count fixed at 22. Preserve the decision observation frame and member mapping. No other feature, trim, parameter relationship, order, or execution approval is implied.",
+    "status": "planning"
+  },
+  "local_evidence_examples": [
+    {
+      "source_face_ids": [
+        "F0064",
+        "F0002",
+        "F0024",
+        "F0163",
+        "F0225",
+        "F0123",
+        "F0198",
+        "F0055",
+        "F0101",
+        "F0126",
+        "F0169",
+        "F0026",
+        "F0067"
+      ],
+      "observation": "Candidate local sector from reciprocal P1 adjacency; F0064 abuts F0002 and F0024; outer fragments and shoulder and cone are adjoining boundaries, not an established 22-feature template.",
+      "status": "provisional"
+    },
+    {
+      "source_face_ids": [
+        "F0023",
+        "F0096",
+        "F0137",
+        "F0138",
+        "F0181",
+        "F0003",
+        "F0108"
+      ],
+      "observation": "R31 spherical patches meet F0137, which neighbors F0138/F0181, themselves adjacent to R40 patches F0108/F0003. Trim and material side remain open.",
+      "status": "provisional"
+    }
+  ],
+  "dag_prerequisites": {
+    "status": "provisional",
+    "scope": "Logical geometric prerequisites only; this does not assert source feature history or a unique Boolean operation sequence.",
+    "nodes": [
+      {
+        "id": "frame_and_inventory",
+        "requires": [],
+        "description": "ABS frame, units, snapshot-local face and edge incidence."
+      },
+      {
+        "id": "region_carriers_and_boundaries",
+        "requires": [
+          "frame_and_inventory"
+        ],
+        "description": "Carrier parameters, directed edge loops and region interfaces for each candidate."
+      },
+      {
+        "id": "verified_section_or_trimmed_region",
+        "requires": [
+          "region_carriers_and_boundaries"
+        ],
+        "description": "Closed editable sections or equivalent bounded regions with material side and parameters supported by evidence."
+      },
+      {
+        "id": "candidate_composition",
+        "requires": [
+          "verified_section_or_trimmed_region"
+        ],
+        "description": "Provisional additive/subtractive regions and transitions with overlap and dependency rationale; order remains unresolved."
+      },
+      {
+        "id": "shared_22_parameters",
+        "requires": [
+          "frame_and_inventory"
+        ],
+        "description": "Decision-bound shared radius, pitch circle, phase, equal spacing and count; member mapping is in the user decision."
+      }
+    ],
+    "local_dependencies": [
+      {
+        "dependent": "F0005/F0140 transition candidate",
+        "requires": [
+          "F0026/F0067 adjoining cone boundaries",
+          "F0009/F0076 adjoining cylindrical boundaries"
+        ],
+        "note": "Geometric adjacency only; not evidence of creation order."
+      },
+      {
+        "dependent": "F0004/F0125 shoulder candidate",
+        "requires": [
+          "F0080 and F0047 adjoining long-region boundaries",
+          "F0169 shoulder boundary"
+        ],
+        "note": "F0004 and F0125 share an edge; complete loops and role remain unknown."
+      },
+      {
+        "dependent": "F0138/F0181 transition candidate",
+        "requires": [
+          "F0108/F0003 spherical boundaries",
+          "F0137 planar boundary"
+        ],
+        "note": "Plane and sphere roles require proof."
+      }
+    ]
+  },
+  "open_items": [
+    {
+      "topic": "section_and_generator",
+      "detail": "Identify a closed, editable engineering section or constrained construction; native B-spline control points as fixed geometry do not establish full parametric design."
+    },
+    {
+      "topic": "trimming_and_cross_boundaries",
+      "detail": "Establish directed loop closure, edge curve/parameter extents, seam treatment and every cross-group boundary; surface carrier and UV min/max alone are insufficient."
+    },
+    {
+      "topic": "material_and_boolean_role",
+      "detail": "Determine material side, additive/subtractive or intersection role and a valid construction order; adjacency does not recover source history."
+    },
+    {
+      "topic": "parameter_intent",
+      "detail": "Except the narrowly confirmed 22 relationship, distinguish measured parameters, assumed relationships, allowed edit ranges and user-confirmed intent."
+    },
+    {
+      "topic": "representative_scope",
+      "detail": "A single detailed observation is evidence for that face only; verify every claimed member mapping and exception, or leave individual faces unclassified/unexplained."
+    },
+    {
+      "topic": "capability_gate",
+      "detail": "Record missing capabilities and impacted regions; P3 cannot mark a region executable without source, parameters, confirmation and applicable capability gates."
+    }
+  ],
+  "controlled_read_queue": {
+    "status": "planning",
+    "semantics": "Original bounded queue has completed. Any further read requires explicit evidence-gap analysis; selector support is only UF18/Spherical, UF19/SurfaceOfRevolution and UF20/Swept and 1 or 2 selectors per controlled read. Existing evidence must be reused without replay.",
+    "matching_note": "P1 offline uniqueness at 0.001 mm is not proof of cross-session identity or shape equivalence. Resolve on the current selected body and current inventory with full native type, box and edge count; require exactly one distinct face per selector and a validated current-session edge whitelist.",
+    "items": [
+      {
+        "batch": 1,
+        "source_face_id": "F0024",
+        "selector": {
+          "label": "F0024",
+          "surface_type": "Swept",
+          "uf_type": 20,
+          "bounding_box": [
+            0.5121802933128,
+            -123.08220658490357,
+            -12.08269733097,
+            1.425534095778173,
+            -71.00000000000001,
+            -11.319712370628947
+          ],
+          "edge_count": 4
+        },
+        "p1_offline_selector_match_count_at_0_001_mm": 1,
+        "purpose": "Other flank adjoining F0064; compare its generating curve and bounded end loops against existing F0002 only for this locally connected unit.",
+        "status": "planning",
+        "read_result": "completed_first_read_clean_and_human_owned",
+        "result_path": "workspace/v3/p3/P3-REGIONS-01/native-01-F0024/detail-snapshot.json"
+      },
+      {
+        "batch": 1,
+        "source_face_id": "F0125",
+        "selector": {
+          "label": "F0125",
+          "surface_type": "SurfaceOfRevolution",
+          "uf_type": 19,
+          "bounding_box": [
+            10.0417040006077,
+            -71.00000000000001,
+            4.236634331465625,
+            11.503831664070049,
+            -67.97510176210952,
+            5.662216762225649
+          ],
+          "edge_count": 4
+        },
+        "p1_offline_selector_match_count_at_0_001_mm": 1,
+        "purpose": "Neighbor of F0004; inspect carrier and four boundary edges against F0004, F0047, F0022 and F0169 to constrain the local shoulder.",
+        "status": "planning",
+        "read_result": "completed_first_read_clean_and_human_owned",
+        "result_path": "workspace/v3/p3/P3-REGIONS-01/native-02-F0125/detail-snapshot.json"
+      },
+      {
+        "batch": 2,
+        "source_face_id": "F0138",
+        "selector": {
+          "label": "F0138",
+          "surface_type": "SurfaceOfRevolution",
+          "uf_type": 19,
+          "bounding_box": [
+            -28.333163714810002,
+            -26.000000000000004,
+            -28.333163714810002,
+            0,
+            -24.235294117650003,
+            28.333163714810002
+          ],
+          "edge_count": 4
+        },
+        "p1_offline_selector_match_count_at_0_001_mm": 1,
+        "purpose": "Inspect carrier and four boundary edges linking F0108, F0137 and F0181, to constrain the sphere/plane transition.",
+        "status": "planning",
+        "read_result": "completed_first_read_clean_and_human_owned",
+        "result_path": "workspace/v3/p3/P3-REGIONS-01/native-03-F0138/detail-snapshot.json"
+      },
+      {
+        "batch": 2,
+        "source_face_id": "F0046",
+        "selector": {
+          "label": "F0046",
+          "surface_type": "SurfaceOfRevolution",
+          "uf_type": 19,
+          "bounding_box": [
+            25.217411567632542,
+            -16,
+            3.537903185965709,
+            33.63629365602825,
+            16.118822425141754,
+            12.070245536472589
+          ],
+          "edge_count": 4
+        },
+        "p1_offline_selector_match_count_at_0_001_mm": 1,
+        "purpose": "Inspect carrier and four boundary edges linking F0006, F0041, F0112 and F0171, to constrain a head complex-surface boundary.",
+        "status": "planning",
+        "read_result": "completed_first_read_clean_and_human_owned",
+        "result_path": "workspace/v3/p3/P3-REGIONS-01/native-04-F0046/detail-snapshot.json"
+      }
+    ],
+    "stop_conditions": [
+      "Do not proceed on unavailable ownership/authorization, ambiguous or duplicate selector, unexpected edge class, inventory mismatch, diagnostic overflow, or unsupported native data.",
+      "At first dirty indication, UF error, consistency fault or unknown state stop further queries, perform only required cleanup and preserve/freeze evidence; no automatic retry or reset.",
+      "After the four selected faces, stop and evaluate whether the specific cross-region boundaries, editable generating laws and role decisions are resolved; if not, document the missing capability/evidence and blocked scope rather than accumulate unbounded single-face candidates."
+    ],
+    "read_limitations": [
+      "Returned UV box is not a proof of complete trim.",
+      "The native observation frame and converted geometry require independent validation.",
+      "No finite representative proves all repeated members; current reads cannot by themselves establish material side or user design intent."
+    ],
+    "execution_state": "the four original queued observations are complete; no replay is needed"
+  },
+  "phase_boundary": {
+    "P3": "Establish region sources, closures/trims, material roles, parameter intent and confirmed assumptions or explicit blocked gaps; record provisional geometric prerequisites and capability gates.",
+    "P4": "Constraint binding and NX2506 composition evidence.",
+    "P5": "UG11 backend implementation and packaging.",
+    "P6": "Whole-part geometry, editing, persistence and other execution comparisons.",
+    "acceptance": "All 235 faces must be traced to candidate regions or explicit unresolved records and cross-group boundary edges accounted for. A face in a grouping is not explained coverage. Each executable region needs evidence of its closure, material role, editable parameters, confirmation and capability gates; missing evidence blocks affected scope and whole-part execution. Record whether each face is resolved by inherited detail, analytically justified derivation, or explicit unresolved evidence; native source-level representation is not itself a fully parametric engineering model."
+  },
+  "coverage_statement": "Classification accounts for all 235 source faces; explained-face coverage is not asserted. No NX read, product execution, or whole-part comparison is represented by this planning artifact.",
+  "post_queue_observations": {
+    "status": "provisional",
+    "basis": "The four completed first reads and directly inherited F0002/F0004/F0023/F0005 observations; all native frames and trims retain their stated limits.",
+    "F0002_F0024_flanks": {
+      "resolved": "Both observed underlying extrusions use [0,-1,0]; each generator lies in y=-124 mm, has order 4, seven nonrational poles, unit weights and domain [0,1]. F0064 is P1-adjacent to both.",
+      "full_generator_F0002": {
+        "end": 1,
+        "knots": [
+          0,
+          0,
+          0,
+          0,
+          0.07785760913846,
+          0.5224881258948,
+          0.9225792444503,
+          1,
+          1,
+          1,
+          1
+        ],
+        "num_poles": 7,
+        "order": 4,
+        "rational": false,
+        "start": 0,
+        "type": 102,
+        "weighted_poles_flat_xyzw": [
+          -1.514211257927,
+          -124,
+          -12.14609889528,
+          1,
+          -1.484499470315,
+          -124,
+          -12.12517437096,
+          1,
+          -1.285723302306,
+          -124,
+          -11.98339160066,
+          1,
+          -0.9427701097305,
+          -124,
+          -11.71701651624,
+          1,
+          -0.6199428104744,
+          -124,
+          -11.42595741198,
+          1,
+          -0.4599472514885,
+          -124,
+          -11.26898231241,
+          1,
+          -0.4342019261155,
+          -124,
+          -11.24337201885,
+          1
+        ]
+      },
+      "full_generator_F0024": {
+        "end": 1,
+        "knots": [
+          0,
+          0,
+          0,
+          0,
+          0.07751584936153,
+          0.4776325704711,
+          0.9222915399382,
+          1,
+          1,
+          1,
+          1
+        ],
+        "num_poles": 7,
+        "order": 4,
+        "rational": false,
+        "start": 0,
+        "type": 102,
+        "weighted_poles_flat_xyzw": [
+          0.4342740346376,
+          -124,
+          -11.24327631405,
+          1,
+          0.4600492470103,
+          -124,
+          -11.26891642329,
+          1,
+          0.6200759145356,
+          -124,
+          -11.42592002804,
+          1,
+          0.9429389629908,
+          -124,
+          -11.71700292881,
+          1,
+          1.285838701567,
+          -124,
+          -11.98332857246,
+          1,
+          1.48455693625,
+          -124,
+          -12.12506933252,
+          1,
+          1.514209847785,
+          -124,
+          -12.14595281078,
+          1
+        ]
+      },
+      "comparison": "Reverse F0002 parameter and reflect x about x=0, then compare all weighted poles and the transformed full knot vector with F0024.",
+      "reversed_reflected_pole_deltas_xyzw": [
+        [
+          7.210852209998952e-05,
+          0,
+          9.570479999965187e-05,
+          0
+        ],
+        [
+          0.00010199552179995797,
+          0,
+          6.58891200000511e-05,
+          0
+        ],
+        [
+          0.000133104061199929,
+          0,
+          3.738394000052381e-05,
+          0
+        ],
+        [
+          0.00016885326030002812,
+          0,
+          1.3587429998906941e-05,
+          0
+        ],
+        [
+          0.00011539926100012643,
+          0,
+          6.302819999959297e-05,
+          0
+        ],
+        [
+          5.746593499988961e-05,
+          0,
+          0.00010503843999920548,
+          0
+        ],
+        [
+          -1.4101420000578457e-06,
+          0,
+          0.00014608449999897744,
+          0
+        ]
+      ],
+      "max_reflected_pole_xyz_distance_mm": 0.00016939906070555482,
+      "transformed_knot_deltas": [
+        0,
+        0,
+        0,
+        0,
+        9.509381183003818e-05,
+        0.0001206963659000082,
+        0.00014914907665997124,
+        0,
+        0,
+        0,
+        0
+      ],
+      "conclusion": "The represented bounded generators do not have identical reversed-reflected knots and control points; endpoint differences also show the recorded bounded generators are not exactly the same mirrored segment. No engineering tolerance or 22-sector shape equivalence follows; parameter/trim comparisons and engineering intent remain open."
+    },
+    "F0125_F0004_connection": {
+      "resolved": "P1 shows reciprocal adjacency. F0125 root is a torus, R=3.151110158218 mm, r=0.7363898417823 mm, axis [0.4154215673223985,0,-0.9096290020680968], center [13.64443503102,-71,6.231323509837]. F0004 is a spline-generatrix revolution. Each detail reports a circular edge with center [13.43169817424,-71,6.697143366008], radius 3.680283939165 mm, identical evaluator axes and [0,0.7574105303871671] parameter interval.",
+      "unresolved": "Independent session tags are not identity; P1 reciprocal incidence plus numerical edge data support this local connection. Tangency, complete trim, engineering constraints, material side and all other members remain unproved."
+    },
+    "F0138_sphere_plane": {
+      "resolved": "F0138 is a torus centered [0,-20,0], axis Y, major radius 24.08318915758 mm, minor radius 6 mm. Its edge at y=-26 has radius 24.08318915758 mm. Existing F0023 has sphere center [0,0,0], radius 31 mm, and an edge at y=-26 of radius sqrt(31^2-26^2)=16.881943016134 mm. Reciprocal incidence puts F0137 between the two different circular boundaries; an annular planar region is a candidate, with exact trim and role still open. F0138 also adjoins F0108, a sphere centered [0,4,0] of radius 40 mm. In the radial/axial section, torus tube center-to-sphere-center distance sqrt(24.08318915758^2+24^2) is approximately 34 mm = 40-6, supporting internal carrier tangency at y approximately -24.235294118 mm and radial approximately 28.333163715 mm, consistent with the measured boundary circle.",
+      "unresolved": "Tangency is for ideal underlying carriers using reported numbers, not proof of orientation, transition construction history, full 360-degree trim or solid role."
+    },
+    "F0046_head": {
+      "resolved": "F0046 underlying torus center [-2.181266636934,4,3.778064640025] mm, axis [-0.5000000000000168,0,0.866025403784429], major radius 24.68073994091 mm, minor radius 15 mm; its loop observations include a circular arc, one y=-16 spline and two spatial spline intersections. P1 adjacency ties it to F0006, F0041, F0112 and the R32 sphere F0171.",
+      "unresolved": "Axis directions reported by different UF surfaces may be reversed and origin points need not denote torus centers. P1 data suggest related carriers, but do not establish six-way equivalence, edge trim, a closed section, role, or the relevant editable parameter relationships."
+    }
+  },
+  "candidate_region_topology": {
+    "status": "provisional",
+    "scope": "P1 reciprocal adjacency; 22 mappings reference decision members after snapshot-aware semantic binding, not transfer of tags or proof of repeated feature equivalence.",
+    "twenty_two_local_maps": [
+      {
+        "confirmed_relation_cylinder": "F0011",
+        "direct_swept_neighbors": [
+          "F0093",
+          "F0107"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0080",
+          "F0178"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0061"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0029",
+        "direct_swept_neighbors": [
+          "F0077",
+          "F0214"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0043",
+          "F0201"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0195"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0036",
+        "direct_swept_neighbors": [
+          "F0134",
+          "F0180"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0142",
+          "F0163"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0188"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0047",
+        "direct_swept_neighbors": [
+          "F0111",
+          "F0222"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0040",
+          "F0080"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0125"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0064",
+        "direct_swept_neighbors": [
+          "F0002",
+          "F0024"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0163",
+          "F0225"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0123"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0069",
+        "direct_swept_neighbors": [
+          "F0221",
+          "F0228"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0110",
+          "F0223"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0132"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0081",
+        "direct_swept_neighbors": [
+          "F0207",
+          "F0227"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0152",
+          "F0225"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0007"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0098",
+        "direct_swept_neighbors": [
+          "F0010",
+          "F0149"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0043",
+          "F0089"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0049"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0100",
+        "direct_swept_neighbors": [
+          "F0114",
+          "F0170"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0040",
+          "F0054"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0209"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0122",
+        "direct_swept_neighbors": [
+          "F0086",
+          "F0197"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0030",
+          "F0097"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0060"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0127",
+        "direct_swept_neighbors": [
+          "F0017",
+          "F0085"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0068",
+          "F0223"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0092"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0129",
+        "direct_swept_neighbors": [
+          "F0034",
+          "F0224"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0018",
+          "F0173"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0229"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0136",
+        "direct_swept_neighbors": [
+          "F0084",
+          "F0217"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0089",
+          "F0097"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0230"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0143",
+        "direct_swept_neighbors": [
+          "F0088",
+          "F0146"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0106",
+          "F0161"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0233"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0147",
+        "direct_swept_neighbors": [
+          "F0052",
+          "F0058"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0054",
+          "F0110"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0104"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0165",
+        "direct_swept_neighbors": [
+          "F0091",
+          "F0234"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0087",
+          "F0106"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0212"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0172",
+        "direct_swept_neighbors": [
+          "F0072",
+          "F0184"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0032",
+          "F0173"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0109"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0174",
+        "direct_swept_neighbors": [
+          "F0094",
+          "F0186"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0030",
+          "F0142"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0053"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0179",
+        "direct_swept_neighbors": [
+          "F0008",
+          "F0159"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0068",
+          "F0152"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0019"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0183",
+        "direct_swept_neighbors": [
+          "F0057",
+          "F0103"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0087",
+          "F0201"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0120"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0189",
+        "direct_swept_neighbors": [
+          "F0039",
+          "F0144"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0018",
+          "F0161"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0075"
+        ],
+        "status": "provisional"
+      },
+      {
+        "confirmed_relation_cylinder": "F0194",
+        "direct_swept_neighbors": [
+          "F0208",
+          "F0216"
+        ],
+        "outer_cylinder_neighbors_via_swept": [
+          "F0032",
+          "F0178"
+        ],
+        "direct_shoulder_neighbors": [
+          "F0219"
+        ],
+        "status": "provisional"
+      }
+    ],
+    "six_head_patch_maps": [
+      {
+        "r32_spherical_patch": "F0131",
+        "direct_neighbors": [
+          "F0051",
+          "F0082",
+          "F0128",
+          "F0130"
+        ],
+        "status": "provisional"
+      },
+      {
+        "r32_spherical_patch": "F0157",
+        "direct_neighbors": [
+          "F0062",
+          "F0065",
+          "F0218",
+          "F0226"
+        ],
+        "status": "provisional"
+      },
+      {
+        "r32_spherical_patch": "F0171",
+        "direct_neighbors": [
+          "F0006",
+          "F0046",
+          "F0095",
+          "F0112"
+        ],
+        "status": "provisional"
+      },
+      {
+        "r32_spherical_patch": "F0177",
+        "direct_neighbors": [
+          "F0012",
+          "F0073",
+          "F0193",
+          "F0215"
+        ],
+        "status": "provisional"
+      },
+      {
+        "r32_spherical_patch": "F0203",
+        "direct_neighbors": [
+          "F0050",
+          "F0105",
+          "F0175",
+          "F0205"
+        ],
+        "status": "provisional"
+      },
+      {
+        "r32_spherical_patch": "F0232",
+        "direct_neighbors": [
+          "F0083",
+          "F0153",
+          "F0155",
+          "F0156"
+        ],
+        "status": "provisional"
+      }
+    ],
+    "unresolved": "No mapping implies a closed region, unique partition, exact rotational symmetry, Boolean ordering or confirmed parameter intent."
+  },
+  "remaining_evidence_scope": {
+    "status": "provisional",
+    "total_unread_selectable_faces_in_inventory": 142,
+    "long_and_head_unread_selectable_faces": 139,
+    "complete_unread_selectable_sets": [
+      {
+        "scope": "long_segment_swept",
+        "face_count": 42,
+        "source_face_ids": [
+          "F0008",
+          "F0010",
+          "F0017",
+          "F0034",
+          "F0039",
+          "F0052",
+          "F0057",
+          "F0058",
+          "F0072",
+          "F0077",
+          "F0084",
+          "F0085",
+          "F0086",
+          "F0088",
+          "F0091",
+          "F0093",
+          "F0094",
+          "F0103",
+          "F0107",
+          "F0111",
+          "F0114",
+          "F0134",
+          "F0144",
+          "F0146",
+          "F0149",
+          "F0159",
+          "F0170",
+          "F0180",
+          "F0184",
+          "F0186",
+          "F0197",
+          "F0207",
+          "F0208",
+          "F0214",
+          "F0216",
+          "F0217",
+          "F0221",
+          "F0222",
+          "F0224",
+          "F0227",
+          "F0228",
+          "F0234"
+        ],
+        "why_evidence_is_needed": "42 unobserved UF20 flank carriers; either obtain their generating/trim evidence or establish each from a separately evidenced analytic/parametric law.",
+        "status": "provisional"
+      },
+      {
+        "scope": "shoulder",
+        "face_count": 66,
+        "source_face_ids": [
+          "F0007",
+          "F0013",
+          "F0014",
+          "F0015",
+          "F0016",
+          "F0019",
+          "F0022",
+          "F0025",
+          "F0027",
+          "F0028",
+          "F0033",
+          "F0037",
+          "F0038",
+          "F0042",
+          "F0045",
+          "F0049",
+          "F0053",
+          "F0055",
+          "F0060",
+          "F0061",
+          "F0063",
+          "F0070",
+          "F0074",
+          "F0075",
+          "F0079",
+          "F0090",
+          "F0092",
+          "F0101",
+          "F0104",
+          "F0109",
+          "F0117",
+          "F0120",
+          "F0123",
+          "F0126",
+          "F0132",
+          "F0133",
+          "F0135",
+          "F0139",
+          "F0141",
+          "F0145",
+          "F0151",
+          "F0154",
+          "F0158",
+          "F0162",
+          "F0164",
+          "F0169",
+          "F0182",
+          "F0185",
+          "F0187",
+          "F0188",
+          "F0191",
+          "F0192",
+          "F0195",
+          "F0198",
+          "F0199",
+          "F0200",
+          "F0204",
+          "F0209",
+          "F0210",
+          "F0211",
+          "F0212",
+          "F0219",
+          "F0229",
+          "F0230",
+          "F0231",
+          "F0233"
+        ],
+        "why_evidence_is_needed": "66 unobserved UF19 shoulder carriers; separate torus from spline revolutions, obtain boundaries or prove derivation for every affected member.",
+        "status": "provisional"
+      },
+      {
+        "scope": "head",
+        "face_count": 31,
+        "source_face_ids": [
+          "F0003",
+          "F0012",
+          "F0041",
+          "F0050",
+          "F0051",
+          "F0062",
+          "F0065",
+          "F0066",
+          "F0071",
+          "F0095",
+          "F0096",
+          "F0099",
+          "F0108",
+          "F0113",
+          "F0121",
+          "F0128",
+          "F0131",
+          "F0155",
+          "F0156",
+          "F0157",
+          "F0160",
+          "F0171",
+          "F0176",
+          "F0177",
+          "F0181",
+          "F0190",
+          "F0193",
+          "F0203",
+          "F0205",
+          "F0232",
+          "F0235"
+        ],
+        "why_evidence_is_needed": "31 unobserved UF18/19 head surfaces; sphere carriers are already analytic in P1, but each trimmed boundary must be justified from adjacent observed curves or separately read.",
+        "status": "provisional"
+      },
+      {
+        "scope": "rear",
+        "face_count": 1,
+        "source_face_ids": [
+          "F0140"
+        ],
+        "why_evidence_is_needed": "F0140 boundary/trim evidence is required unless established from F0005 and neighboring evidence; P1 alone does not prove trimmed reflection.",
+        "status": "provisional"
+      },
+      {
+        "scope": "neck",
+        "face_count": 2,
+        "source_face_ids": [
+          "F0167",
+          "F0168"
+        ],
+        "why_evidence_is_needed": "F0167/F0168 boundaries/trim require evidence unless derived from already established neighbors.",
+        "status": "provisional"
+      }
+    ],
+    "interpretation": "These 142 IDs exhaust all as-yet-unread P1 faces of supported UF18/19/20 types; they are an explicit finite evidence-audit ceiling, not 142 approved calls or a claim that every face necessarily requires an independent read. Long-and-head scope is the first 139. A face can be removed only by recording a face-specific source and validated derivation of its required carrier, directed boundary and editing law. P1 analytic planes/cylinders/cones and spheres establish underlying carrier observations and incidence, not full edge curves or trims. Per-member evidence is necessary; independent reread is not if valid inherited evidence or exact derivation exists.",
+    "limitations": "A finite mandatory read count cannot yet be proven: equivalent construction, sufficient neighbor-edge coverage, intended parameterization and missing UF16/17/22 edge detail are unresolved. Therefore do not infer 142 reads are sufficient or minimal; current selector support cannot acquire UF16/17/22 as target faces. Stop and record exact residual capability/intent gaps if analytic and supported-neighbor evidence does not close them. No existing detail should be replayed."
+  },
+  "y_axis_outer_stock_candidate": {
+    "status": "provisional",
+    "objective": "A single reviewable Y-axis radial exterior stock candidate for T13; use a revolved closed section as a planning construction, without claiming exact reference-body reconstruction.",
+    "frame_and_units": "Absolute part coordinates; y and r=sqrt(x^2+z^2), mm; angles radians.",
+    "assumptions": [
+      "Use a filled axisymmetric stock enclosing candidate outer carrier between y=-158.6 and y=17; axis and end radial closures are construction choices.",
+      "Local flats, spline flanks, 22-member reliefs, head cuts and cavities remain separate future regions; no additive/subtractive classification is inferred solely from normal_sense.",
+      "Revolution across all angles is a candidate construction hypothesis, not established identity of all source trimmed half-faces.",
+      "F0126/F0169, F0167/F0168, F0066/F0160 are candidate toroidal branches and centers from P1 parameters/adjacency, not yet directly read native root geometry."
+    ],
+    "segments": [
+      {
+        "y_start_mm": -158.6,
+        "y_end_mm": -157.6,
+        "r_start_mm": 6.9,
+        "r_end_mm": 7.9,
+        "source_faces": [
+          "F0148"
+        ],
+        "carrier_or_candidate": "cone: r=6.9+(y+158.6)",
+        "status": "provisional",
+        "basis_and_limits": "P1 cone and two boundary planes; real end face is locally cut."
+      },
+      {
+        "y_start_mm": -157.6,
+        "y_end_mm": -151.1,
+        "r_start_mm": 7.9,
+        "r_end_mm": 7.9,
+        "source_faces": [
+          "F0115"
+        ],
+        "carrier_or_candidate": "cylinder r=7.9",
+        "status": "provisional",
+        "basis_and_limits": "P1 carrier and circular adjacency; F0059/F0119 interrupt full circular trim."
+      },
+      {
+        "y_start_mm": -151.1,
+        "y_end_mm": -150.4649147039,
+        "r_start_mm": 7.9,
+        "r_end_mm": 9.0,
+        "source_faces": [
+          "F0031"
+        ],
+        "carrier_or_candidate": "cone joining radii 7.9 and 9; half-angle pi/3",
+        "status": "provisional",
+        "basis_and_limits": "P1 cone and axial limits; real local intersections are non-axisymmetric."
+      },
+      {
+        "y_start_mm": -150.4649147039,
+        "y_end_mm": -125.273479089,
+        "r_start_mm": 9.0,
+        "r_end_mm": 9.0,
+        "source_faces": [
+          "F0009",
+          "F0076"
+        ],
+        "carrier_or_candidate": "cylinder r=9",
+        "status": "provisional",
+        "basis_and_limits": "P1 carrier and adjacency; F0116 modifies the end region."
+      },
+      {
+        "y_start_mm": -125.273479089,
+        "y_end_mm": -123.273479089,
+        "r_start_mm": 9.0,
+        "r_end_mm": 11.0,
+        "source_faces": [
+          "F0005",
+          "F0140"
+        ],
+        "carrier_or_candidate": "candidate torus r=11-sqrt(4-(y+125.273479089)^2)",
+        "status": "provisional",
+        "basis_and_limits": "F0005 root is native torus centered at y=-125.273479089, major 11, minor 2; edges at R9/R11 observed. F0140 opposite half trim remains unproved."
+      },
+      {
+        "y_start_mm": -123.273479089,
+        "y_end_mm": -122.6,
+        "r_start_mm": 11.0,
+        "r_end_mm": 12.1665,
+        "source_faces": [
+          "F0026",
+          "F0067"
+        ],
+        "carrier_or_candidate": "cone: r=11+tan(pi/3)*(y+123.273479089)",
+        "status": "provisional",
+        "basis_and_limits": "P1 analytic cone, adjacency and extents. Non-axisymmetric interruptions remain."
+      },
+      {
+        "y_start_mm": -122.6,
+        "y_end_mm": -69.76410523497,
+        "r_start_mm": 12.1665,
+        "r_end_mm": 12.1665,
+        "source_faces": [
+          "F0018",
+          "F0030",
+          "F0032",
+          "F0040",
+          "F0043",
+          "F0054",
+          "F0068",
+          "F0080",
+          "F0087",
+          "F0089",
+          "F0097",
+          "F0106",
+          "F0110",
+          "F0142",
+          "F0152",
+          "F0161",
+          "F0163",
+          "F0173",
+          "F0178",
+          "F0201",
+          "F0223",
+          "F0225"
+        ],
+        "carrier_or_candidate": "cylinder r=12.1665",
+        "status": "provisional",
+        "basis_and_limits": "P1 common carrier and two axial boundary levels. It is fragmented by flank features, which the blank intentionally fills."
+      },
+      {
+        "y_start_mm": -69.76410523497,
+        "y_end_mm": -67,
+        "r_start_mm": 12.1665,
+        "r_end_mm": 13.0,
+        "source_faces": [
+          "F0126",
+          "F0169"
+        ],
+        "carrier_or_candidate": "candidate torus: r=17.1665-sqrt(25-(y+69.76410523497)^2)",
+        "status": "provisional",
+        "basis_and_limits": "Inferred only from P1 revolution fields, axis, bounding extents and neighboring cylinders, with an assumed torus branch/center. F0169 is the proposed positive-X meridian read; F0126 is opposite-side verification."
+      },
+      {
+        "y_start_mm": -67,
+        "y_end_mm": -52,
+        "r_start_mm": 13,
+        "r_end_mm": 13,
+        "source_faces": [
+          "F0078",
+          "F0202"
+        ],
+        "carrier_or_candidate": "cylinder r=13",
+        "status": "provisional",
+        "basis_and_limits": "P1 carrier and boundary adjacency."
+      },
+      {
+        "y_start_mm": -52,
+        "y_end_mm": -49,
+        "r_start_mm": 13,
+        "r_end_mm": 16,
+        "source_faces": [
+          "F0167",
+          "F0168"
+        ],
+        "carrier_or_candidate": "candidate torus: r=16-sqrt(9-(y+52)^2)",
+        "status": "provisional",
+        "basis_and_limits": "P1 revolution fields and adjacent circular boundaries support this branch as a hypothesis only; center and trim need root data. F0167 is positive-X meridian, F0168 opposite side."
+      },
+      {
+        "y_start_mm": -49,
+        "y_end_mm": -49,
+        "r_start_mm": 16,
+        "r_end_mm": 22,
+        "source_faces": [
+          "F0220"
+        ],
+        "carrier_or_candidate": "radial planar interval",
+        "status": "provisional",
+        "basis_and_limits": "P1 plane and cone adjacency; inner r16 relies on previous unverified torus candidate."
+      },
+      {
+        "y_start_mm": -49,
+        "y_end_mm": -48,
+        "r_start_mm": 22,
+        "r_end_mm": 23,
+        "source_faces": [
+          "F0021",
+          "F0048"
+        ],
+        "carrier_or_candidate": "cone: r=22+(y+49)",
+        "status": "provisional",
+        "basis_and_limits": "P1 analytic 45-degree cone and circular adjacency."
+      },
+      {
+        "y_start_mm": -48,
+        "y_end_mm": -37.5,
+        "r_start_mm": 23,
+        "r_end_mm": 23,
+        "source_faces": [
+          "F0102",
+          "F0213"
+        ],
+        "carrier_or_candidate": "cylinder r=23",
+        "status": "provisional",
+        "basis_and_limits": "P1 carrier and circular adjacency."
+      },
+      {
+        "y_start_mm": -37.5,
+        "y_end_mm": -37.5,
+        "r_start_mm": 23,
+        "r_end_mm": 30,
+        "source_faces": [
+          "F0035"
+        ],
+        "carrier_or_candidate": "radial planar interval",
+        "status": "provisional",
+        "basis_and_limits": "P1 plane and analytic circular adjacency."
+      },
+      {
+        "y_start_mm": -37.5,
+        "y_end_mm": -14,
+        "r_start_mm": 30,
+        "r_end_mm": 45,
+        "source_faces": [
+          "F0056",
+          "F0166"
+        ],
+        "carrier_or_candidate": "cone: r=30+(30/47)*(y+37.5)",
+        "status": "provisional",
+        "basis_and_limits": "P1 conical analytic carrier and adjacent analytic circular levels."
+      },
+      {
+        "y_start_mm": -14,
+        "y_end_mm": -2.732050807569,
+        "r_start_mm": 45,
+        "r_end_mm": 45,
+        "source_faces": [
+          "F0020",
+          "F0118"
+        ],
+        "carrier_or_candidate": "cylinder r=45",
+        "status": "provisional",
+        "basis_and_limits": "P1 carrier and analytic adjacency."
+      },
+      {
+        "y_start_mm": -2.732050807569,
+        "y_end_mm": -1,
+        "r_start_mm": 45,
+        "r_end_mm": 44,
+        "source_faces": [
+          "F0150",
+          "F0206"
+        ],
+        "carrier_or_candidate": "cone: r=45-(y+2.732050807569)/sqrt(3)",
+        "status": "provisional",
+        "basis_and_limits": "P1 cone angle pi/6 and adjacent analytic cylinders."
+      },
+      {
+        "y_start_mm": -1,
+        "y_end_mm": 14,
+        "r_start_mm": 44,
+        "r_end_mm": 44,
+        "source_faces": [
+          "F0044",
+          "F0124"
+        ],
+        "carrier_or_candidate": "cylinder r=44",
+        "status": "provisional",
+        "basis_and_limits": "P1 carrier and analytic adjacency."
+      },
+      {
+        "y_start_mm": 14,
+        "y_end_mm": 17,
+        "r_start_mm": 44,
+        "r_end_mm": 44.54670774402059,
+        "source_faces": [
+          "F0066",
+          "F0160"
+        ],
+        "carrier_or_candidate": "candidate torus: r=43+sqrt(4-(y-(14+sqrt(3)))^2)",
+        "status": "provisional",
+        "basis_and_limits": "P1 revolution fields and outer box support candidate outer branch; y center=14+sqrt(3) is inferred, not a native torus-center observation. F0066 is positive-X meridian; F0160 verifies opposite side."
+      },
+      {
+        "y_start_mm": 17,
+        "y_end_mm": 17,
+        "r_start_mm": 44.54670774402059,
+        "r_end_mm": 0,
+        "source_faces": [
+          "F0196"
+        ],
+        "carrier_or_candidate": "provisional blank top closure to axis",
+        "status": "provisional",
+        "basis_and_limits": "Outer endpoint depends on top-torus hypothesis. F0196 has multiple interior intersections; a filled top face to axis is a construction assumption for stock, not the trimmed reference face."
+      }
+    ],
+    "c0_junctions": "Every listed neighboring segment shares its tabulated (y,r) endpoint as a proposed C0 chain. All P1 analytic portions are supported as carriers and axial levels; the three candidate ring branches require the native root/trim evidence noted below. C0 is not a claim of tangency or full source trimming.",
+    "closure": "Return from (y=17,r=0) down the Y axis to (y=-158.6,r=0), then out to (y=-158.6,r=6.9). These end/axis edges close the candidate section for a revolve; neither closure asserts the reference faces are full disks.",
+    "interior_evidence": "F0138/F0108 sphere/torus and F0137 planar ring at y near -26 are inside the outer F0056/F0166 cone carrier at the same y; they are candidates for later internal-region analysis, not part of the exterior section. The material side and Boolean role remain unconfirmed.",
+    "minimal_meridian_native_evidence": {
+      "status": "provisional",
+      "scope": "The three positive-X faces F0169, F0167, F0066 are the complete bounded first-read set for directly establishing the three unknown meridian root carriers and local directed trims under this construction. Existing F0005 and F0138 details are reused. This is a minimal proposed set under the stated evidence method; an independently proved analytic reconstruction could remove an individual read.",
+      "selectors": [
+        {
+          "face_id": "F0169",
+          "scope": "meridian",
+          "selector": {
+            "label": "F0169",
+            "surface_type": "SurfaceOfRevolution",
+            "uf_type": 19,
+            "bounding_box": [
+              -5.311422702667177e-17,
+              -69.76410523497137,
+              -13.000000000000002,
+              13.000000000000002,
+              -67,
+              13.000000000000002
+            ],
+            "edge_count": 48
+          },
+          "reason": "Obtain UF19 root carrier, tube center and directed boundary joining R12.1665 and R13 on the positive-X shoulder. Its many intersection edges can exceed current diagnostic limits.",
+          "status": "provisional"
+        },
+        {
+          "face_id": "F0167",
+          "scope": "meridian",
+          "selector": {
+            "label": "F0167",
+            "surface_type": "SurfaceOfRevolution",
+            "uf_type": 19,
+            "bounding_box": [
+              0,
+              -52.00000000000001,
+              -16,
+              16,
+              -49,
+              16
+            ],
+            "edge_count": 4
+          },
+          "reason": "Obtain UF19 root carrier and trim from R13 at y=-52 to the F0220 edge at y=-49; P1 revolution radius fields do not alone prove the torus branch or center.",
+          "status": "provisional"
+        },
+        {
+          "face_id": "F0066",
+          "scope": "meridian",
+          "selector": {
+            "label": "F0066",
+            "surface_type": "SurfaceOfRevolution",
+            "uf_type": 19,
+            "bounding_box": [
+              -1.091079661025e-14,
+              14,
+              -45.00000000000001,
+              45.00000000000001,
+              17,
+              45.00000000000001
+            ],
+            "edge_count": 4
+          },
+          "reason": "Obtain UF19 root torus center/branch and top and cylinder boundary arcs; reported revolution origin y=15.5 is not proven to be the torus center.",
+          "status": "provisional"
+        }
+      ],
+      "edge_limit": "F0169 has many intersection edges. Do not force a read past current resource limits: overflow, dirty/error or unknown freezes and preserves the evidence; a capability gap remains until safely addressed.",
+      "if_entire_revolution_to_be_claimed_as_matching_reference": "Also require face-specific evidence for F0126, F0168 and F0160, or a separately proved derivation of their carriers and directed trims. Their differing intersections preclude assuming full geometric coverage from a single meridian.",
+      "opposite_half_validation": [
+        {
+          "face_id": "F0126",
+          "scope": "opposite_half_validation",
+          "selector": {
+            "label": "F0126",
+            "surface_type": "SurfaceOfRevolution",
+            "uf_type": 19,
+            "bounding_box": [
+              -13.000000000000002,
+              -69.76410523497178,
+              -13.000000000000002,
+              5.3268201028767963e-17,
+              -67,
+              13.000000000000002
+            ],
+            "edge_count": 48
+          },
+          "reason": "Opposite shoulder is separately trimmed by many intersections; needed only to claim its carrier/outer interface corresponds to the revolved meridian, not to construct a provisional single-meridian blank.",
+          "status": "provisional"
+        },
+        {
+          "face_id": "F0168",
+          "scope": "opposite_half_validation",
+          "selector": {
+            "label": "F0168",
+            "surface_type": "SurfaceOfRevolution",
+            "uf_type": 19,
+            "bounding_box": [
+              -16,
+              -52.00000000000001,
+              -16,
+              0,
+              -49,
+              16
+            ],
+            "edge_count": 4
+          },
+          "reason": "Opposite half of neck; needed to establish its actual carrier and edge trimming rather than infer symmetry from matching P1 scalars.",
+          "status": "provisional"
+        },
+        {
+          "face_id": "F0160",
+          "scope": "opposite_half_validation",
+          "selector": {
+            "label": "F0160",
+            "surface_type": "SurfaceOfRevolution",
+            "uf_type": 19,
+            "bounding_box": [
+              -45.00000000000001,
+              14,
+              -45.00000000000001,
+              0,
+              17,
+              45.00000000000001
+            ],
+            "edge_count": 4
+          },
+          "reason": "Opposite half of upper edge; needed for actual carrier/trim coverage, not to define the conditional meridian profile.",
+          "status": "provisional"
+        }
+      ],
+      "not_required_for_this_blank": [
+        "F0138/F0181 and F0023/F0096 inner candidate loops",
+        "22 flank and shoulder detail faces beyond F0169",
+        "whole-part geometry comparison"
+      ]
+    },
+    "construction_dag": [
+      {
+        "node": "axis_and_closed_stock_section",
+        "depends_on": [],
+        "condition": "P1 analytic carriers and the three local ring branches are supported; retain explicit assumed full-rotation/filled-end scope."
+      },
+      {
+        "node": "revolved_stock_candidate",
+        "depends_on": [
+          "axis_and_closed_stock_section"
+        ],
+        "condition": "P3 plan only; no claim of executable CAD or material-side proof."
+      },
+      {
+        "node": "local_external_or_internal_modifications",
+        "depends_on": [
+          "revolved_stock_candidate"
+        ],
+        "condition": "Flat/slot/flank, spherical/torus inner and head regions need separate source, closure, material role and parameter-intent evidence."
+      },
+      {
+        "node": "transitions_and_boolean_order",
+        "depends_on": [
+          "local_external_or_internal_modifications"
+        ],
+        "condition": "Choose ordering from demonstrated intersections and continuity; source history and uniqueness remain unknown."
+      }
+    ],
+    "flank_parameterization_option": {
+      "status": "provisional",
+      "objective": "Provide a reviewable independently editable pair for one observed sector, without imposing symmetry, a standard gear profile, or full-22 flank equivalence.",
+      "basis": "F0002 and F0024 UF206 generators, both order 4, 7 poles, nonrational unit weights; their full independently observed control arrays and knots are in post_queue_observations. Existing trimmed UV spans and source topology remain evidence-limited.",
+      "definition": "Use two distinct planar cubic B-spline generator functions C_left(u) and C_right(v) in the x-z plane at y=-124 mm. Initialize each from its own observed 7 source control-point x/z coordinates and its own full knot vector; expose every x/z control coordinate as an independent editable parameter, keep that curve’s own recorded knot vector fixed initially, and do not tie opposite sides by reflection. The numbers are starting values, not fixed control points or an imported-body substitute.",
+      "boundary_constraints": "For the observed local member, constrain each trimmed generator endpoint to its adjacent P1 analytic carrier: F0002 joins F0163 and F0064; F0024 joins F0064 and F0225. Keep each curve’s own trim parameters independent and associate them with these contact constraints; do not add tangency without evidence. Use the already confirmed 22-cylinder radius, pitch-circle radius, phase, equal spacing and fixed count only within the decision binding.",
+      "limitations": "P1 lacks original design variables, a validity domain, and per-member full curves. This is a proposed editable parameterization, not evidence of original design intent, 22-sided equality or an approved tooth law. A source spline converted by UF cannot alone prove exact engineering reconstruction.",
+      "user_confirmation_points": [
+        "Whether editable independent spline pole coordinates are acceptable engineering parameters or a different dimensional parameterization is required.",
+        "Which endpoint attachment, any tangency or curvature constraints, and acceptable shape/edit ranges should govern the two flanks.",
+        "Whether flank laws or parameters should be shared across any of the other 21 members; the existing 22-cylinder decision does not answer this."
+      ],
+      "fin_sp_section_evidence": "flank_fin_sp_section_analysis (same artifact); the original source basis and the user decision remain authoritative. The y=-71 candidate section U comes from same-tree FIN SP intersection, not UV minmax or end poles."
+    }
+  },
+  "flank_fin_sp_section_analysis": {
+    "status": "provisional",
+    "decision": "docs/v3/decisions/p3-independent-flanks-user-decision.json",
+    "header_sources": [
+      {
+        "path": "C:/0sf/ug/UGOPEN/uf_brep_types.h",
+        "basis": "UF_BREP_extrude_s: generator is V=0, U equals generator parameterization; V positive along direction, stated in part units."
+      },
+      {
+        "path": "C:/0sf/ug/UGOPEN/uf_brep.h",
+        "basis": "A FIN SP curve is defined in the parent surface u,v parameter space; requested FIN SP or edge 3D may be computed or approximated if absent. Returned tolerant-edge SP accuracy is set when it was made tolerant."
+      }
+    ],
+    "semantic_contract": "Within a consistent UF_BREP face tree and its own converted root EXTRUDE representation, U of a FIN SP is the generator parameter. A section boundary may be obtained by intersecting the FIN SP with a same-tree cross-section SP and evaluating the original generator at that raw U. This is exact as a calculation on the returned representations; source geometry correspondence retains native approximation/frame uncertainty.",
+    "same_tree_findings": [
+      {
+        "face_label": "F0002",
+        "source_snapshot_id": "P3-DETAIL-3444b40a6faa4210ad64c45f344b27be",
+        "source_path": "workspace/v3/p3/P3-CIRCLE-01/native-01/detail-snapshot.json",
+        "candidate_section_y_mm": -71,
+        "section_selection": "The 3D FIN-owned horizontal edge lies at y=-71; its same-loop SP has V=-0.05299999999999999. Both longitudinal FIN SPs meet that same V at one of their own endpoints. This is a same-tree section choice, not AskFaceUvMinmax or an original pole.",
+        "candidate_section_u": [
+          0.07785759842835471,
+          0.9225792444475764
+        ],
+        "longitudinal_fin_observations": [
+          {
+            "fin_sp": {
+              "end": 1,
+              "knots": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "num_poles": 2,
+              "order": 2,
+              "rational": false,
+              "start": 0,
+              "type": 102,
+              "weighted_poles_flat_xyzw": [
+                0.07785759842835471,
+                -0.05299999999999999,
+                0,
+                1,
+                0.0778576091362002,
+                -0.0013999999999999985,
+                0,
+                1
+              ]
+            },
+            "edge_geometry": {
+              "end": [
+                -1.425359972462,
+                -122.6,
+                -12.08271787302
+              ],
+              "start": [
+                -1.4253599785514075,
+                -71,
+                -12.08271787741813
+              ],
+              "type": 101
+            },
+            "fin_geometry_sense": -1,
+            "edge_child_orientation": -1
+          },
+          {
+            "fin_sp": {
+              "end": 1,
+              "knots": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "num_poles": 2,
+              "order": 2,
+              "rational": false,
+              "start": 0,
+              "type": 102,
+              "weighted_poles_flat_xyzw": [
+                0.9225792444475764,
+                -0.0009177934150964018,
+                0,
+                1,
+                0.9225792444475764,
+                -0.05299999999999999,
+                0,
+                1
+              ]
+            },
+            "edge_geometry": {
+              "end": [
+                -0.5120171654322,
+                -71,
+                -11.31971975046
+              ],
+              "start": [
+                -0.5120171654353189,
+                -123.08220658490359,
+                -11.31971975045894
+              ],
+              "type": 101
+            },
+            "fin_geometry_sense": -1,
+            "edge_child_orientation": -1
+          }
+        ],
+        "u_envelope_from_longitudinal_fins": [
+          0.07785759842835471,
+          0.9225792444475764
+        ],
+        "generator_original_knots": [
+          0,
+          0,
+          0,
+          0,
+          0.07785760913846,
+          0.5224881258948,
+          0.9225792444503,
+          1,
+          1,
+          1,
+          1
+        ],
+        "generator_original_order": 4,
+        "generator_nonrational": true,
+        "derivative_control_vectors": [
+          {
+            "index": 0,
+            "value_mm_per_u": [
+              1.144851014850502,
+              0.0,
+              0.8062612460699182
+            ],
+            "norm_mm_per_u": 1.4002646332456024
+          },
+          {
+            "index": 1,
+            "value_mm_per_u": [
+              1.1413245095393185,
+              0.0,
+              0.8140822533939148
+            ],
+            "norm_mm_per_u": 1.40190996549924
+          },
+          {
+            "index": 2,
+            "value_mm_per_u": [
+              1.1151991375434904,
+              0.0,
+              0.8661860301617149
+            ],
+            "norm_mm_per_u": 1.4120720078045086
+          },
+          {
+            "index": 3,
+            "value_mm_per_u": [
+              1.0502520081128315,
+              0.0,
+              0.9469007405290227
+            ],
+            "norm_mm_per_u": 1.4140899168579935
+          },
+          {
+            "index": 4,
+            "value_mm_per_u": [
+              1.0051827043194215,
+              0.0,
+              0.9862064678338338
+            ],
+            "norm_mm_per_u": 1.4081887182690367
+          },
+          {
+            "index": 5,
+            "value_mm_per_u": [
+              0.9976133088680421,
+              0.0,
+              0.9923809207813534
+            ],
+            "norm_mm_per_u": 1.4071432784053977
+          }
+        ],
+        "conservative_derivative_bound_mm_per_u": 1.4141,
+        "low_fin_u_drift": 1.0707845485291578e-08,
+        "low_fin_drift_generator_displacement_bound_mm": 1.514196430075082e-08,
+        "support_by_original_pole": [
+          {
+            "pole_index_zero_based": 0,
+            "support_interval_u": [
+              0,
+              0.07785760913846
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional",
+            "max_basis_weight_on_u_envelope_decimal": "2.603023155422337901216531572083317903523162035149994770183494898380216E-21"
+          },
+          {
+            "pole_index_zero_based": 1,
+            "support_interval_u": [
+              0,
+              0.5224881258948
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 2,
+            "support_interval_u": [
+              0,
+              0.9225792444503
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 3,
+            "support_interval_u": [
+              0,
+              1
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 4,
+            "support_interval_u": [
+              0.07785760913846,
+              1
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 5,
+            "support_interval_u": [
+              0.5224881258948,
+              1
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 6,
+            "support_interval_u": [
+              0.9225792444503,
+              1
+            ],
+            "intersection_with_observed_fin_u_envelope": false,
+            "status": "provisional",
+            "max_basis_weight_on_u_envelope_decimal": "0"
+          }
+        ],
+        "support_interpretation": "Support analysis is for the recorded decimal U envelope of the four observed FIN SP curves and the original B-spline basis; it assumes the selected interval describes the candidate section, not exact source-trim or constraint solvability. The extreme tiny weights are real in this recorded-number model but are below meaningful extraction uncertainty and must not be snapped to zero or promoted as independent drivers.",
+        "status": "provisional"
+      },
+      {
+        "face_label": "F0024",
+        "source_snapshot_id": "P3-DETAIL-9c1ee4cf468e48b18b3ebe75d65df6b5",
+        "source_path": "workspace/v3/p3/P3-REGIONS-01/native-01-F0024/detail-snapshot.json",
+        "candidate_section_y_mm": -71,
+        "section_selection": "The 3D FIN-owned horizontal edge lies at y=-71; its same-loop SP has V=-0.05299999999999999. Both longitudinal FIN SPs meet that same V at one of their own endpoints. This is a same-tree section choice, not AskFaceUvMinmax or an original pole.",
+        "candidate_section_u": [
+          0.07751584936317985,
+          0.922291539939342
+        ],
+        "longitudinal_fin_observations": [
+          {
+            "fin_sp": {
+              "end": 1,
+              "knots": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "num_poles": 2,
+              "order": 2,
+              "rational": false,
+              "start": 0,
+              "type": 102,
+              "weighted_poles_flat_xyzw": [
+                0.07751584936317985,
+                -0.0009177934150964295,
+                0,
+                1,
+                0.07751584936317985,
+                -0.05299999999999999,
+                0,
+                1
+              ]
+            },
+            "edge_geometry": {
+              "end": [
+                0.5121802933128,
+                -71,
+                -11.31971237063
+              ],
+              "start": [
+                0.5121802933159111,
+                -123.08220658490357,
+                -11.319712370628947
+              ],
+              "type": 101
+            },
+            "fin_geometry_sense": 1,
+            "edge_child_orientation": 1
+          },
+          {
+            "fin_sp": {
+              "end": 1,
+              "knots": [
+                0,
+                0,
+                1,
+                1
+              ],
+              "num_poles": 2,
+              "order": 2,
+              "rational": false,
+              "start": 0,
+              "type": 102,
+              "weighted_poles_flat_xyzw": [
+                0.922291539939342,
+                -0.0013999999999999985,
+                0,
+                1,
+                0.922291539939342,
+                -0.05299999999999999,
+                0,
+                1
+              ]
+            },
+            "edge_geometry": {
+              "end": [
+                1.4255340957781728,
+                -71,
+                -12.082697330968776
+              ],
+              "start": [
+                1.425534095777,
+                -122.6,
+                -12.08269733097
+              ],
+              "type": 101
+            },
+            "fin_geometry_sense": -1,
+            "edge_child_orientation": -1
+          }
+        ],
+        "u_envelope_from_longitudinal_fins": [
+          0.07751584936317985,
+          0.922291539939342
+        ],
+        "generator_original_knots": [
+          0,
+          0,
+          0,
+          0,
+          0.07751584936153,
+          0.4776325704711,
+          0.9222915399382,
+          1,
+          1,
+          1,
+          1
+        ],
+        "generator_original_order": 4,
+        "generator_nonrational": true,
+        "derivative_control_vectors": [
+          {
+            "index": 0,
+            "value_mm_per_u": [
+              0.9975461503034956,
+              0.0,
+              -0.9923174209347254
+            ],
+            "norm_mm_per_u": 1.4070508824757793
+          },
+          {
+            "index": 1,
+            "value_mm_per_u": [
+              1.005124089637325,
+              0.0,
+              -0.9861362967467512
+            ],
+            "norm_mm_per_u": 1.408097735006579
+          },
+          {
+            "index": 2,
+            "value_mm_per_u": [
+              1.050198449646955,
+              0.0,
+              -0.9468250162725275
+            ],
+            "norm_mm_per_u": 1.413999432489398
+          },
+          {
+            "index": 3,
+            "value_mm_per_u": [
+              1.1151402601514795,
+              0.0,
+              -0.8661145347559733
+            ],
+            "norm_mm_per_u": 1.4119816525459052
+          },
+          {
+            "index": 4,
+            "value_mm_per_u": [
+              1.141255503978579,
+              0.0,
+              -0.8140290840175324
+            ],
+            "norm_mm_per_u": 1.4018229114220608
+          },
+          {
+            "index": 5,
+            "value_mm_per_u": [
+              1.1447754148551226,
+              0.0,
+              -0.8062241193581169
+            ],
+            "norm_mm_per_u": 1.4001814457746142
+          }
+        ],
+        "conservative_derivative_bound_mm_per_u": 1.4141,
+        "low_fin_u_drift": 0.0,
+        "low_fin_drift_generator_displacement_bound_mm": 0.0,
+        "support_by_original_pole": [
+          {
+            "pole_index_zero_based": 0,
+            "support_interval_u": [
+              0,
+              0.07751584936153
+            ],
+            "intersection_with_observed_fin_u_envelope": false,
+            "status": "provisional",
+            "max_basis_weight_on_u_envelope_decimal": "0"
+          },
+          {
+            "pole_index_zero_based": 1,
+            "support_interval_u": [
+              0,
+              0.4776325704711
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 2,
+            "support_interval_u": [
+              0,
+              0.9222915399382
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 3,
+            "support_interval_u": [
+              0,
+              1
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 4,
+            "support_interval_u": [
+              0.07751584936153,
+              1
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 5,
+            "support_interval_u": [
+              0.4776325704711,
+              1
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional"
+          },
+          {
+            "pole_index_zero_based": 6,
+            "support_interval_u": [
+              0.9222915399382,
+              1
+            ],
+            "intersection_with_observed_fin_u_envelope": true,
+            "status": "provisional",
+            "max_basis_weight_on_u_envelope_decimal": "3.173901200977893279122335145586494576365429414106385136544603252343758E-33"
+          }
+        ],
+        "support_interpretation": "Support analysis is for the recorded decimal U envelope of the four observed FIN SP curves and the original B-spline basis; it assumes the selected interval describes the candidate section, not exact source-trim or constraint solvability. The extreme tiny weights are real in this recorded-number model but are below meaningful extraction uncertainty and must not be snapped to zero or promoted as independent drivers.",
+        "status": "provisional"
+      }
+    ],
+    "bound_derivation": "For a nonrational cubic spline C(u)=sum_i N_i,3(u) P_i, derivative Cprime is a degree-2 B-spline with Q_i=3*(P_(i+1)-P_i)/(t_(i+4)-t_(i+1)). Since its nonnegative basis weights sum to 1, norm(Cprime(u)) <= max_i norm(Q_i), so norm(C(u2)-C(u1)) <= L*abs(u2-u1) on the domain. 1.41410 mm/U is an outward-rounded bound above both calculated control-vector norms. This bound is for the returned generators only, excludes SP-to-native mismatch, and is not a manufacturing, model, or acceptance tolerance.",
+    "v_scale_and_frame": "For these two records only, observed SP V=-0.053 maps to edge y=-71 while generator y=-124 and direction is [0,-1,0]; observed V=-0.0014 maps to y=-122.6, consistent numerically with y=-124-1000*V. The header states V in part units, so this local 1000 relation is an unresolved representation/unit inconsistency, not a generally validated transform. U extraction at the existing y=-71 shared FIN endpoint does not require V-to-world conversion. Arbitrary world-y sections require a justified source-frame/V mapping or a separate same-tree section intersection with recorded correspondence.",
+    "strict_remaining_gaps": [
+      "UF_BREP permits an SP or 3D curve to be computed by approximation; the numerical correspondence accuracy for these specific FINs/edges is not established by the requested 0.001 setting, especially for preexisting tolerant edges.",
+      "The source-frame/unit mapping responsible for V scale must be resolved before interpreting arbitrary 3D sections or claiming S(u,v) world coordinates.",
+      "Confirm loop/FIN direction, trimming and selected section applicability, plus endpoint-to-adjacent-carrier constraints, before declaring a closed editable engineering section.",
+      "Raw generators differ and P0/P6 support can be exactly zero or minuscule in the recorded-number model; mathematical nonzero influence alone does not prove usable independent design degrees of freedom, constraint solvability or permitted edit ranges.",
+      "Do not transfer FIN U from one source face/snapshot to the other; do not snap raw U to knot values or convert approximate confidence into exact source truth."
+    ],
+    "implementation_hand_off": "A future offline source-to-section tool may select the same-tree y=-71 horizontal FIN, intersect its SP with the two longitudinal FIN SPs, preserve raw U values and original knot/order/control identity, evaluate the two nonrational generators, expose exact U-sensitive support and a conservative derivative-polygon bound, and emit explicit unsupported/inconclusive states for missing correspondence, incompatible tree/frames, non-linear U or unverified trim. This does not implement P4/P5 operations or P6 whole-part comparison."
+  },
+  "flank_section_edge_vs_generator": {
+    "status": "provisional",
+    "scope": "Offline complete coefficient and topology comparison of existing same-tree evidence, no NX calls.",
+    "records": [
+      {
+        "face_label": "F0002",
+        "source_snapshot_id": "P3-DETAIL-3444b40a6faa4210ad64c45f344b27be",
+        "source_path": "workspace/v3/p3/P3-CIRCLE-01/native-01/detail-snapshot.json",
+        "edge_id_snapshot_array_index": "E0406",
+        "edge_session_tag": 63787,
+        "tag_scope": "only this source snapshot/session; never a cross-session selector",
+        "edge_geometry": {
+          "end": 1,
+          "knots": [
+            0,
+            0,
+            0,
+            0,
+            0.5263633582585,
+            1,
+            1,
+            1,
+            1
+          ],
+          "num_poles": 5,
+          "order": 4,
+          "rational": false,
+          "start": 0,
+          "type": 102,
+          "weighted_poles_flat_xyzw": [
+            -1.425359984642,
+            -71,
+            -12.08271788182,
+            1,
+            -1.256781068298,
+            -71,
+            -11.960911885,
+            1,
+            -0.9427701042508,
+            -71,
+            -11.71701651228,
+            1,
+            -0.6470465784696,
+            -71,
+            -11.45039400223,
+            1,
+            -0.5120171654322,
+            -71,
+            -11.31971975046,
+            1
+          ]
+        },
+        "edge_fin_sp": {
+          "end": 1,
+          "knots": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "num_poles": 2,
+          "order": 2,
+          "rational": false,
+          "start": 0,
+          "type": 102,
+          "weighted_poles_flat_xyzw": [
+            0.07785759842835471,
+            -0.05299999999999999,
+            0,
+            1,
+            0.9225792444475764,
+            -0.05299999999999999,
+            0,
+            1
+          ]
+        },
+        "edge_fin_geometry_sense": 1,
+        "edge_child_orientation": 1,
+        "native_edge_parameter_domain": [
+          0,
+          1
+        ],
+        "generator_domain": [
+          0,
+          1
+        ],
+        "generator_original_order": 4,
+        "generator_original_knots": [
+          0,
+          0,
+          0,
+          0,
+          0.07785760913846,
+          0.5224881258948,
+          0.9225792444503,
+          1,
+          1,
+          1,
+          1
+        ],
+        "generator_num_poles": 7,
+        "edge_vertices_and_endpoint_differences": [
+          {
+            "edge_endpoint": [
+              -1.425359984642,
+              -71,
+              -12.08271788182
+            ],
+            "topological_vertex": [
+              -1.4253599785514075,
+              -71,
+              -12.08271787741813
+            ],
+            "endpoint_minus_vertex_xyz_mm": [
+              "-6.0905925E-9",
+              "0",
+              "-4.40187E-9"
+            ],
+            "distance_mm": "7.514770555243603044706709449002573101015948624143353527486357364310920E-9"
+          },
+          {
+            "edge_endpoint": [
+              -0.5120171654322,
+              -71,
+              -11.31971975046
+            ],
+            "topological_vertex": [
+              -0.5120171654322,
+              -71,
+              -11.31971975046
+            ],
+            "endpoint_minus_vertex_xyz_mm": [
+              "0E-13",
+              "0",
+              "0E-11"
+            ],
+            "distance_mm": "0E-13"
+          }
+        ],
+        "candidate_affine_parameter_map": {
+          "edge_t_domain": [
+            0,
+            1
+          ],
+          "generator_u_start": "0.07785759842835471",
+          "generator_u_end": "0.9225792444475764",
+          "formula": "u(t)=u_start+(u_end-u_start)*t",
+          "basis": "Candidate only: obtained from same-tree horizontal FIN SP endpoints, which are linearly parameterized; the independently returned 3D edge does not by itself prove equal parameterization or exact source trim."
+        },
+        "common_basis_comparison": {
+          "method": "Translate generator [0,53,0] mm, restrict using raw candidate u endpoints by knot insertion, reparameterize to [0,1], insert the union of both complete knot multisets without snapping, and compare all seven resulting 3D control points. With equal nonrational basis and positive unit weights, convex-hull bound applies for each common parameter t. Decimal arithmetic uses 70 digits over the JSON-recorded decimal numbers.",
+          "common_normalized_knot_vector": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1.267885739695640631607716255240643231408093312202485417145058702665371E-8",
+            "0.5263633582585",
+            "0.5263633642653543373088065523398398697846968909961592124482009975954571",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "refined_generator_controls_mm": [
+            [
+              "-1.425359984644078842925624143035922707562958654104615453252425056872768",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-12.08271788181712375275067183585869770468598678160221280604732986377246"
+            ],
+            [
+              "-1.425359980583408516954861377776168019745834781296561515605743217465250",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-12.08271787888310326094961485469115162377938876594230137186931473688690"
+            ],
+            [
+              "-1.256781062023651698086468933673578098123873420531431129312313096133514",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.96091188068318853314584654387049310739596342898772514418699999263732"
+            ],
+            [
+              "-1.091497201734019425387075450903949903968513579786299999420135567521085",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.83253429693322682112735687514071990132571617710600695613434488631603"
+            ],
+            [
+              "-0.7871120804773189192965075849117838581515119964272464646425523429949908",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.57667619598292676222521512618610853276129265633142187937535621052749"
+            ],
+            [
+              "-0.6470465784715353354017639253837903108155646732813864012470537853225207",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.45039400223582856362935480432500756295658121534685977266249539106188"
+            ],
+            [
+              "-0.5120171654350205945353373117192140593344161405193726954397419827803101",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.31971975045708534234309973189973196890943162508473189675399850204823"
+            ]
+          ],
+          "refined_edge_controls_mm": [
+            [
+              "-1.425359984642",
+              "-71",
+              "-12.08271788182"
+            ],
+            [
+              "-1.425359980581329729313459628015416449233537602954084375328197814483684",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-12.08271787888597953762491724226220951372184585634932336047926013145359"
+            ],
+            [
+              "-1.256781064316699765764746117576579110415313596781111811108825866303807",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.96091188190768534950558828794859831100080665783177871195835495075042"
+            ],
+            [
+              "-1.091497196986652969074135388208315688201863282779149686888571556409394",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.83253429284235984542134353113972999748817244537158080662136754596633"
+            ],
+            [
+              "-0.7871120743281953198329059044933258770838455380622698249873945443180203",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.57667619090120875233407163504526519330293896184417278586762944441418"
+            ],
+            [
+              "-0.6470465767571015488969509451118650995817233657732744896407576241013130",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.45039400057273549205762174337477315134889703570806400721858299684222"
+            ],
+            [
+              "-0.5120171654322",
+              "-71",
+              "-11.31971975046"
+            ]
+          ],
+          "control_differences_generator_minus_edge_mm": [
+            [
+              "-2.078842925624143035922707562958654104615453252425056872768E-12",
+              "0E-68",
+              "2.87624724932816414130229531401321839778719395267013622754E-12"
+            ],
+            [
+              "-2.078787641401749760751570512297178342477140277545402981566E-12",
+              "0E-68",
+              "2.87627667530238757105788994245709040702198860994539456669E-12"
+            ],
+            [
+              "2.293048067678277183903001012291440176249680681796512770170293E-9",
+              "0E-68",
+              "1.22449681635974174407810520360484322884405356777135495811310E-9"
+            ],
+            [
+              "-4.747366456312940062695634215766650297007150312531564011111691E-9",
+              "0E-68",
+              "-4.09086697570601334400098990383754373173442614951297734034970E-9"
+            ],
+            [
+              "-6.1491235994636016804184579810676664583649766396551577986769705E-9",
+              "0E-68",
+              "-5.08171800989114349114084333945835369448724909350772676611331E-9"
+            ],
+            [
+              "-1.7144337865048129802719252112338413075081119116062961612212077E-9",
+              "0E-68",
+              "-1.66309307157173306095023441160768417963879576544391239421966E-9"
+            ],
+            [
+              "-2.8205945353373117192140593344161405193726954397419827803101E-12",
+              "0E-68",
+              "2.91465765690026810026803109056837491526810324600149795177E-12"
+            ]
+          ],
+          "computed_max_control_distance_mm": "7.977191170677320856083470489155674932562771729809699370136567435060209E-9",
+          "outward_rounded_control_hull_bound_mm": "7.98e-9",
+          "status": "provisional"
+        },
+        "conclusion": "Direct edge and generator differ in pole count and knots, so edge [0,1] is not the generator U domain. Their FIN-derived affine correspondence agrees within the stated all-control-points bound but is not exactly equal in recorded decimal representations. This proves neither exact original-face trim nor independently establishes the affine mapping. The edge itself is a bounded cross-section source, not a license to discard or fix the original generator basis."
+      },
+      {
+        "face_label": "F0024",
+        "source_snapshot_id": "P3-DETAIL-9c1ee4cf468e48b18b3ebe75d65df6b5",
+        "source_path": "workspace/v3/p3/P3-REGIONS-01/native-01-F0024/detail-snapshot.json",
+        "edge_id_snapshot_array_index": "E0319",
+        "edge_session_tag": 63700,
+        "tag_scope": "only this source snapshot/session; never a cross-session selector",
+        "edge_geometry": {
+          "end": 1,
+          "knots": [
+            0,
+            0,
+            0,
+            0,
+            0.4736366417415,
+            1,
+            1,
+            1,
+            1
+          ],
+          "num_poles": 5,
+          "order": 4,
+          "rational": false,
+          "start": 0,
+          "type": 102,
+          "weighted_poles_flat_xyzw": [
+            0.5121802933128,
+            -71,
+            -11.31971237063,
+            1,
+            0.6472115894765,
+            -71,
+            -11.45038467648,
+            1,
+            0.9429389629908,
+            -71,
+            -11.71700292881,
+            1,
+            1.256953424111,
+            -71,
+            -11.96089376355,
+            1,
+            1.425534095777,
+            -71,
+            -12.08269733097,
+            1
+          ]
+        },
+        "edge_fin_sp": {
+          "end": 1,
+          "knots": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "num_poles": 2,
+          "order": 2,
+          "rational": false,
+          "start": 0,
+          "type": 102,
+          "weighted_poles_flat_xyzw": [
+            0.07751584936317985,
+            -0.05299999999999999,
+            0,
+            1,
+            0.922291539939342,
+            -0.05299999999999999,
+            0,
+            1
+          ]
+        },
+        "edge_fin_geometry_sense": 1,
+        "edge_child_orientation": 1,
+        "native_edge_parameter_domain": [
+          0,
+          1
+        ],
+        "generator_domain": [
+          0,
+          1
+        ],
+        "generator_original_order": 4,
+        "generator_original_knots": [
+          0,
+          0,
+          0,
+          0,
+          0.07751584936153,
+          0.4776325704711,
+          0.9222915399382,
+          1,
+          1,
+          1,
+          1
+        ],
+        "generator_num_poles": 7,
+        "edge_vertices_and_endpoint_differences": [
+          {
+            "edge_endpoint": [
+              0.5121802933128,
+              -71,
+              -11.31971237063
+            ],
+            "topological_vertex": [
+              0.5121802933128,
+              -71,
+              -11.31971237063
+            ],
+            "endpoint_minus_vertex_xyz_mm": [
+              "0E-13",
+              "0",
+              "0E-11"
+            ],
+            "distance_mm": "0E-13"
+          },
+          {
+            "edge_endpoint": [
+              1.425534095777,
+              -71,
+              -12.08269733097
+            ],
+            "topological_vertex": [
+              1.4255340957781728,
+              -71,
+              -12.082697330968776
+            ],
+            "endpoint_minus_vertex_xyz_mm": [
+              "-1.1728E-12",
+              "0",
+              "-1.224E-12"
+            ],
+            "distance_mm": "1.695180179213997298913145549484942932023616778963452684754638012116373E-12"
+          }
+        ],
+        "candidate_affine_parameter_map": {
+          "edge_t_domain": [
+            0,
+            1
+          ],
+          "generator_u_start": "0.07751584936317985",
+          "generator_u_end": "0.922291539939342",
+          "formula": "u(t)=u_start+(u_end-u_start)*t",
+          "basis": "Candidate only: obtained from same-tree horizontal FIN SP endpoints, which are linearly parameterized; the independently returned 3D edge does not by itself prove equal parameterization or exact source trim."
+        },
+        "common_basis_comparison": {
+          "method": "Translate generator [0,53,0] mm, restrict using raw candidate u endpoints by knot insertion, reparameterize to [0,1], insert the union of both complete knot multisets without snapping, and compare all seven resulting 3D control points. With equal nonrational basis and positive unit weights, convex-hull bound applies for each common parameter t. Decimal arithmetic uses 70 digits over the JSON-recorded decimal numbers.",
+          "common_normalized_knot_vector": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0.4736366417398074560791549239768056403451158876584520183902875086431671",
+            "0.4736366417415",
+            "0.9999999999986481618579470225645073296239560862281711371845839065655230",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "refined_generator_controls_mm": [
+            [
+              "0.5121802933144589671403935183384279569212353218446894773912425014518197",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.31971237062828848040573152504737724548774946156347007649146685982412"
+            ],
+            [
+              "0.6472115894776036751992889047839524134684088369905420029680520031844115",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.45038467648541120518895272695397496254033684160468590657051964712740"
+            ],
+            [
+              "0.7872789095399080152569676371207297009819394131640376664102461528089050",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.57666485014381363058111842736509822676592865577027215566365884619238"
+            ],
+            [
+              "1.091667717814359097242095088126931208437611888885936888241381572750627",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000001",
+              "-11.83251856472771338519082642656599008541410961929877432730558194983101"
+            ],
+            [
+              "1.256953424111537740628590344722093713728180539423938993292288760428930",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.96089376354971161935599397966623684752846031242592511071537439975886"
+            ],
+            [
+              "1.425534095777516382915641288720457134582254245984998300434557721678476",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-12.08269733096837213552587858163861769778283976274025722660847880176148"
+            ],
+            [
+              "1.425534095777949341970247576698699664069157803903430243031691338273791",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-12.08269733096868495879841682503421401407157527332871952793477861239365"
+            ]
+          ],
+          "refined_edge_controls_mm": [
+            [
+              "0.5121802933128",
+              "-71",
+              "-11.31971237063"
+            ],
+            [
+              "0.6472115894760174646990879627810583096521014984104099140746714319951004",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.45038467647953304158209546905030697285174662501719194489937624326655"
+            ],
+            [
+              "0.7872789095383467333588843403891848223521150756672902376678492867038835",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.57666485014011779453052751997400993328490133601881309309637947540067"
+            ],
+            [
+              "1.091667717813095380500561450573354750560714653723971311203255857682613",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.83251856472702609353985599547231004886603498139757060650849442561634"
+            ],
+            [
+              "1.256953424110575503274301501912473838954669684125408204223400343619034",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-11.96089376354967029906710132863595530811883498017129207675152322243184"
+            ],
+            [
+              "1.425534095776567040945393678903053957346223800491892998391840647663889",
+              "-71.00000000000000000000000000000000000000000000000000000000000000000000",
+              "-12.08269733096968717672745827311496912029107501210365309277961975910274"
+            ],
+            [
+              "1.425534095777",
+              "-71",
+              "-12.08269733097"
+            ]
+          ],
+          "control_differences_generator_minus_edge_mm": [
+            [
+              "1.6589671403935183384279569212353218446894773912425014518197E-12",
+              "0E-68",
+              "1.71151959426847495262275451225053843652992350853314017588E-12"
+            ],
+            [
+              "1.5862105002009420028941038163073385801320888933805711893111E-12",
+              "0E-68",
+              "-5.87816360685725790366798968859021658749396167114340386085E-12"
+            ],
+            [
+              "1.5612818980832967315448786298243374967474287423968661050215E-12",
+              "0E-68",
+              "-3.69583605059090739108829348102731975145906256727937079171E-12"
+            ],
+            [
+              "1.263716741533637553576457876897235161965577038125715068014E-12",
+              "-1E-68",
+              "-6.8729165097043109368003654807463790120372079708752421467E-13"
+            ],
+            [
+              "9.62237354288842809619874773510855298530789068888416809896E-13",
+              "0E-68",
+              "-4.132028889265103028153940962533225463303396385117732702E-14"
+            ],
+            [
+              "9.49341970247609817403177236030445493105302042717074014587E-13",
+              "0E-68",
+              "1.31504120157969147635142250823524936339586617114095734126E-12"
+            ],
+            [
+              "9.49341970247576698699664069157803903430243031691338273791E-13",
+              "0E-68",
+              "1.31504120158317496578598592842472667128047206522138760635E-12"
+            ]
+          ],
+          "computed_max_control_distance_mm": "6.088421071175091638804131360339952944983599623683142479338461004234497E-12",
+          "outward_rounded_control_hull_bound_mm": "6.1e-12",
+          "status": "provisional"
+        },
+        "conclusion": "Direct edge and generator differ in pole count and knots, so edge [0,1] is not the generator U domain. Their FIN-derived affine correspondence agrees within the stated all-control-points bound but is not exactly equal in recorded decimal representations. This proves neither exact original-face trim nor independently establishes the affine mapping. The edge itself is a bounded cross-section source, not a license to discard or fix the original generator basis."
+      }
+    ],
+    "interpretation": "Both observed horizontal 3D section edges are cubic five-pole splines with their own [0,1] domain; original generators are cubic seven-pole splines with different knot vectors. Their directed edge and FIN incidence are forward in their own source snapshots. A bounded section-edge representation may be planned independently, but user-confirmed original generator bases must remain traceably linked; a mapping based on approximable FIN SP is conditional. Nonzero control differences mean exact representation identity was not proved.",
+    "bound_scope": "The maximum difference of all refined control points bounds the pointwise difference between the two returned nonrational spline representations under the explicitly assumed affine correspondence. It excludes UF native approximation or edge/vertex tolerances, cannot certify source-shape equality, and is not a manufacturing or acceptance tolerance.",
+    "remaining_gap": "An independent authoritative edge-parameter to generator-U map or a certified source approximation/error bound is needed to replace the FIN-derived correspondence with a source-proven trim interval. It is not necessary to solve full face trimming merely to store the bounded section edge as observed geometry."
+  }
+}

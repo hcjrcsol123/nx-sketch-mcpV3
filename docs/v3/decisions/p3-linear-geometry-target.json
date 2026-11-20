@@ -1,0 +1,24 @@
+{
+  "schema": "v3-user-acceptance-target/1.0",
+  "decision_id": "P3-USER-LINEAR-GEOMETRY-001MM-01",
+  "recorded_utc": "2026-11-09T13:21:33.942503+00:00",
+  "confirmed_date": "2026-11-09",
+  "confirmed_at": "Exact user message timestamp not recorded",
+  "authority": "explicit user reply in this conversation",
+  "question": "重建件与参考件的后续几何比较，线性数值容差采用多少？建议先以 0.001 mm 为目标，仍需在 NX2506 和 UG11 实测确认；这不是制造公差，也不表示当前已经达到。",
+  "answer": "0.001 mm",
+  "linear_absolute_target": {
+    "value": 0.001,
+    "unit": "mm"
+  },
+  "scope": "Acceptance target for later V3 geometry comparisons of reconstructed parts with the reference, to be validated in NX2506 and UG11",
+  "status": "user_confirmed_target_pending_native_validation",
+  "not_confirmed": [
+    "achievement of this tolerance by any current output",
+    "manufacturing tolerance or compliance",
+    "angular, area or volume comparison thresholds",
+    "unknown source or conversion errors as zero",
+    "full-shape proof from bounding boxes, finite sampling or existing matching thresholds"
+  ],
+  "note": "Keep this target distinct from exploratory matching tolerances and requested UF approximation tolerances; the latter do not by themselves prove the target is met."
+}

@@ -1,0 +1,275 @@
+{
+  "schema": "v3-user-design-decision/1.0",
+  "recorded_utc": "2026-11-11T12:19:45.903410+00:00",
+  "confirmed_at": "Exact message timestamp not available; recorded after receipt in this conversation",
+  "authority": "explicit user reply in this conversation",
+  "answer": "均为前者",
+  "answer_context": "User selected the first option for both numbered questions in the immediately preceding assistant final answer.",
+  "decision_id": "P3-USER-REAR-SLOT-INDEPENDENT-01",
+  "question": "尾槽宽度、半径、轴的 y/z 位置采用四个独立尺寸并保持居中，还是需要尺寸联动？",
+  "selected_option": "四个独立尺寸并保持居中",
+  "scope": {
+    "independent_parameters": [
+      {
+        "id": "width",
+        "value": 5.0,
+        "unit": "mm"
+      },
+      {
+        "id": "radius",
+        "value": 37.5,
+        "unit": "mm"
+      },
+      {
+        "id": "axis_y",
+        "value": -162.6,
+        "unit": "mm"
+      },
+      {
+        "id": "axis_z",
+        "value": 42.0,
+        "unit": "mm"
+      }
+    ],
+    "fixed_center_x": {
+      "value": 0.0,
+      "unit": "mm"
+    },
+    "fixed_axis_line_direction": [
+      1,
+      0,
+      0
+    ],
+    "centering_rule": "side planes x=-width/2 and x=+width/2 in the source part absolute frame",
+    "cross_parameter_linkage": false
+  },
+  "source_binding": {
+    "plan_path": "workspace/v3/p3/P3-REGION-PLAN-02/slot-plan-c2.json",
+    "snapshot_id": "P1-REFERENCE-7812d302a165453badcd339473b5dba3",
+    "unit": "mm",
+    "source": {
+      "cylinder_face_id": "F0116",
+      "plane_face_ids": [
+        "F0059",
+        "F0119"
+      ],
+      "three_face_unique_edge_ids": [
+        "E0085",
+        "E0157",
+        "E0173",
+        "E0202",
+        "E0206",
+        "E0208",
+        "E0210",
+        "E0245",
+        "E0295",
+        "E0361",
+        "E0413",
+        "E0474",
+        "E0479",
+        "E0486",
+        "E0619"
+      ],
+      "three_face_unique_edge_count": 15,
+      "edges": [
+        {
+          "edge_id": "E0085",
+          "edge_type": "Linear",
+          "face_ids": [
+            "F0001",
+            "F0119"
+          ]
+        },
+        {
+          "edge_id": "E0157",
+          "edge_type": "Circular",
+          "face_ids": [
+            "F0116",
+            "F0119"
+          ]
+        },
+        {
+          "edge_id": "E0173",
+          "edge_type": "Linear",
+          "face_ids": [
+            "F0076",
+            "F0119"
+          ]
+        },
+        {
+          "edge_id": "E0202",
+          "edge_type": "Linear",
+          "face_ids": [
+            "F0059",
+            "F0115"
+          ]
+        },
+        {
+          "edge_id": "E0206",
+          "edge_type": "Linear",
+          "face_ids": [
+            "F0009",
+            "F0059"
+          ]
+        },
+        {
+          "edge_id": "E0208",
+          "edge_type": "Circular",
+          "face_ids": [
+            "F0059",
+            "F0116"
+          ]
+        },
+        {
+          "edge_id": "E0210",
+          "edge_type": "Linear",
+          "face_ids": [
+            "F0001",
+            "F0116"
+          ]
+        },
+        {
+          "edge_id": "E0245",
+          "edge_type": "Spline",
+          "face_ids": [
+            "F0119",
+            "F0148"
+          ]
+        },
+        {
+          "edge_id": "E0295",
+          "edge_type": "Spline",
+          "face_ids": [
+            "F0059",
+            "F0148"
+          ]
+        },
+        {
+          "edge_id": "E0361",
+          "edge_type": "Linear",
+          "face_ids": [
+            "F0115",
+            "F0119"
+          ]
+        },
+        {
+          "edge_id": "E0413",
+          "edge_type": "Intersection",
+          "face_ids": [
+            "F0009",
+            "F0116"
+          ]
+        },
+        {
+          "edge_id": "E0474",
+          "edge_type": "Linear",
+          "face_ids": [
+            "F0001",
+            "F0059"
+          ]
+        },
+        {
+          "edge_id": "E0479",
+          "edge_type": "Spline",
+          "face_ids": [
+            "F0031",
+            "F0059"
+          ]
+        },
+        {
+          "edge_id": "E0486",
+          "edge_type": "Spline",
+          "face_ids": [
+            "F0031",
+            "F0119"
+          ]
+        },
+        {
+          "edge_id": "E0619",
+          "edge_type": "Intersection",
+          "face_ids": [
+            "F0076",
+            "F0116"
+          ]
+        }
+      ],
+      "cylinder_observation": {
+        "origin": [
+          0,
+          -162.6,
+          42
+        ],
+        "direction": [
+          -1,
+          0,
+          0
+        ],
+        "normal_sense": -1,
+        "radius": 37.5
+      },
+      "plane_observations_and_projections": [
+        {
+          "face_id": "F0119",
+          "edge_id": "E0157",
+          "t": -2.5,
+          "source_origin": [
+            -2.5,
+            -152.0304625042595,
+            6.679875928948689
+          ],
+          "source_direction": [
+            1,
+            0,
+            0
+          ],
+          "source_normal_sense": 1,
+          "direction_axis_dot": 1.0,
+          "parallel_residual": 0.0,
+          "axis_intersection": [
+            -2.5,
+            -162.6,
+            42.0
+          ],
+          "plane_residual": 0.0
+        },
+        {
+          "face_id": "F0059",
+          "edge_id": "E0208",
+          "t": 2.5,
+          "source_origin": [
+            2.5,
+            -152.03046250426382,
+            6.679875928946464
+          ],
+          "source_direction": [
+            -1,
+            0,
+            0
+          ],
+          "source_normal_sense": -1,
+          "direction_axis_dot": -1.0,
+          "parallel_residual": 0.0,
+          "axis_intersection": [
+            2.5,
+            -162.6,
+            42.0
+          ],
+          "plane_residual": 0.0
+        }
+      ]
+    },
+    "tool": {
+      "kind": "finite_cylinder_intersection_of_two_axial_halfspaces",
+      "closed_mathematical_set": true,
+      "definition": "For x, let t=dot(x-origin,axis), r=(x-origin)-t*axis. Tool={x: dot(r,r)<=radius^2 and low<=t<=high}.",
+      "operation_candidate": "subtract (stock intersection tool) from candidate stock",
+      "end_depth": "defined by stock intersection; no extra terminal plane or bounding-box inference"
+    }
+  },
+  "not_confirmed": [
+    "complete original trim or material occupancy proof",
+    "stock envelope and exact boolean result",
+    "permitted edit domains, constraint solvability or native binding",
+    "0.001 mm geometry target achieved or manufacturing tolerance"
+  ]
+}
